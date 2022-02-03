@@ -3,9 +3,9 @@
 
 @font-face {
   font-family: 'Eiko-Heading';
-  src: url('static/fonts/PPEiko-Light.woff2') format('woff2');
+  src: url('/static/fonts/PPEiko-Light.woff2') format('woff2');
 }
-html, body {
+* {
   font-family: 'Eiko-Heading';
 }
 
