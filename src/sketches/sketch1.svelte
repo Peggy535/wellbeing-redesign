@@ -3,11 +3,15 @@ import P5 from "p5-svelte";
 
 const sketch = (p5) => {
   p5.ref="sketch1";
+  let w = p5.displayWidth;
+  let h = p5.displayHeight;
   p5.setup = () => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight);
+    p5.createCanvas(w, h);
     //p5.background(184,110,122);
     // translucent stroke using alpha value
     p5.stroke(0, 0, 0, 15);
+    console.log("w and h"+ w+':'+h);
+    console.log("window"+p5.windowWidth +':'+p5.windowHeight);
   };
   const randomChord = () => {
     // find a random point on a circle

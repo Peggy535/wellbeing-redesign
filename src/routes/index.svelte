@@ -9,7 +9,7 @@ import Sketch1 from '../sketches/sketch1.svelte';
 
 
 <Sketch1/>
-<section class="z-20 h-screen w-screen overflow-hidden overscroll-none">
+<section class="z-20 h-screen w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
       <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3">JH Online Therapies</h1>
