@@ -34,6 +34,8 @@ module.exports = {
         '11xl': '10rem',
         '12xl': '11rem',
         '13xl': '12rem',
+        '14xl': '13rem',
+        '15xl': '14rem',
       }
     },
   },
