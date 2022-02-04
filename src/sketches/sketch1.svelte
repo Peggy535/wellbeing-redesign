@@ -4,7 +4,7 @@ import P5 from "p5-svelte";
 const sketch = (p5) => {
   p5.ref="sketch1";
   p5.setup = () => {
-    p5.createCanvas(p5.windowWidth, p5.displayHeight);
+    p5.createCanvas(p5.windowWidth, p5.windowHeight);
     //p5.background(184,110,122);
     // translucent stroke using alpha value
     p5.stroke(0, 0, 0, 20);
