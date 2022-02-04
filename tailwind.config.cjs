@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Eiko': 'Eiko-Heading',
+        'Eiko-Italic': 'Eiko-Italic',
       },
       colors:{
       'rose-main': '#B86E7A',	/* Main Primary colour Rose Gold*/
