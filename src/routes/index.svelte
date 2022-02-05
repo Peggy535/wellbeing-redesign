@@ -18,11 +18,11 @@ import Sketch1 from '../sketches/sketch1.svelte';
 </section>
 <section class="z-30 w-screen">
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
-    <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-center">
+    <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
       <h1 class="text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-12xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
     </div>
-    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-xl sm:text-xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
+      <p class="text-lg sm:text-xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
@@ -34,23 +34,23 @@ import Sketch1 from '../sketches/sketch1.svelte';
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 place-content-evenly lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
       <p class="text-lg lg:text-xl leading-loose lg:leading-loose">By now hopefully, you’ve pressed the play button on both my welcome and about me recordings and I’ve saved you valuable time on reading a 
         page full of words without much connection. As a hypnotherapist, it’s important you get a feel for my voice and personality if we are going to do some work together. 
-        I’m also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p>
+        I’m also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p><br/>
       <p class="text-lg lg:text-xl leading-loose lg:leading-loose">At this stage you would have heard my story and know, just as so many before me and many to follow, I’ve had my own path to travel and it’s not always been straight 
         forward but it has led me to where I am today and it continues to get better and convince me that, miracles actually do happen, every single day.</p>
     </div>
   </div>
   <div class="grid grid-cols-2 grid-rows-2 sm:grid-cols-4 place-content-evenly">
-    <blockquote class="grid pr-2 md:pr-10 col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 lg:col-start-2 lg:col-end-5 text-4xl sm:text-5xl md:text-6xl lg:text-6xl 
+    <blockquote class="grid h-screen sm:h-auto items-center pr-2 md:pr-10 col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 lg:col-start-2 lg:col-end-5 text-4xl sm:text-5xl md:text-6xl lg:text-6xl 
                        xl:text-7xl 2xl:text-7xl text-right px-3 mb-10 sm:mb-20 lg:mb-30">
       Having personally experienced such things as anxiety, trauma and chronic fatigue syndrome, and having recovered through the same therapies I offer today, 
       allows me to truly understand other's issue's, and how best to treat them.
     </blockquote>
-    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-lg lg:text-2xl leading-loose lg:leading-loose"><span class="text-6xl lg:text-7xl">My desire</span> today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
+    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-center">
+      <p class="text-lg lg:text-xl leading-loose lg:leading-loose"><span class="text-6xl lg:text-7xl">My desire</span> today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
         This in turn can only benefit those around them, and there we have it, a beautiful ripple effect begins and reaches far and wide, as far as the imagination can take you!</p>
     </div>
   </div>
-  <a href="/hypnotherapy.svelte">hypnotherapy</a>
+  <footer><cite class="font-Eiko-Thin text-md m-1 p-1">Generated artwork by Wayne Pegg - 'Thoughts become things.'</cite></footer>
 </section>
 
 

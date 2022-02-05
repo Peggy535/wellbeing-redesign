@@ -1,49 +1,37 @@
 <script>
 import P5 from "p5-svelte";
 
-//Flow field...
-const sketch = (p5) => {
-  //Setting up a grid and extending it beyond the scope of the window width and height
-  const count = 20;
+let x_off1 = 0;
+let x_off2 = 1000;
 
+const sketch = (p5) => {
   p5.setup = () => {
     p5.createCanvas(p5.windowWidth, p5.windowHeight);
-    p5.background(0);
   };
-  const createGrid = () => {
-    let points = [];
-    for(let x = 0; x<count;x++) {
-      for(let y=0; y<count; y++){
-        const u = x/(count-1);
-        const v = y/(count-1);
-        points.push([u,v])
-      }
-    }
-    console.log(points);
-    return points;
+  p5.windowResized = () => {
+    p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    console.log(p5.windowWidth+', '+p5.windowHeight);
   };
-  //Draw horizontal lines
-  function drawline(){
-    p5.line(0, 0, 40, 0);
-  } 
-  // const points = createGrid();
-  /* let theta = (p5.PI)*0; */
   p5.draw = () => {
-    let theta = (p5.PI)*0;
-    p5.background(0);
-    
-    /* points.forEach(([ u, v]) => {
-      const x = u * p5.windowWidth;
-      const y = v * p5.windowHeight;
-      p5.stroke(100);
-      p5.strokeWeight(2);
-      p5.push();
-      p5.translate(x, y);
-      p5.rotate(theta);
-      drawline();
-      p5.pop();
-      theta = theta + 0.003;
-    }) */
+    p5.background(51);
+    /* //let x = p5.random(p5.windowWidth);
+    let x_noise = p5.map(p5.noise(x_off1), 0, 1, 0, p5.width);
+    let y_noise = p5.map(p5.noise(x_off2), 0, 1, 0, p5.height);
+    p5.ellipse(x_noise, y_noise, 24, 24);
+    x_off1 += 0.02;
+    x_off2 += 0.02; */
+    p5.stroke(255);
+    p5.noFill();
+    p5.beginShape();
+    let x_off = 0;
+    for(let x=0; x < p5.width; x++){
+      p5.stroke(255);
+      //let y = p5.random(p5.height);
+      let y = p5.noise(x_off)*p5.height;
+      p5.vertex(x, y);
+      x_off += 0.01;
+    }
+    p5.endShape();
   };
 };
 </script>
