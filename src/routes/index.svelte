@@ -22,7 +22,7 @@ import Sketch1 from '../sketches/sketch1.svelte';
       <h1 class="text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-12xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-xl sm:text-2xl md:text-3xl lg:text-2xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed"><span class="text-6xl lg:text-7xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+      <p class="text-xl sm:text-xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
@@ -32,10 +32,10 @@ import Sketch1 from '../sketches/sketch1.svelte';
       You are beautiful, unique and deserving of all good things.<cite class="text-sm">Justine Hodgson</cite>
     </blockquote>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 place-content-evenly lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-lg lg:text-2xl leading-relaxed ">By now hopefully, you’ve pressed the play button on both my welcome and about me recordings and I’ve saved you valuable time on reading a 
+      <p class="text-lg lg:text-xl leading-loose lg:leading-loose">By now hopefully, you’ve pressed the play button on both my welcome and about me recordings and I’ve saved you valuable time on reading a 
         page full of words without much connection. As a hypnotherapist, it’s important you get a feel for my voice and personality if we are going to do some work together. 
         I’m also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p>
-      <p class="text-lg lg:text-2xl leading-relaxed">At this stage you would have heard my story and know, just as so many before me and many to follow, I’ve had my own path to travel and it’s not always been straight 
+      <p class="text-lg lg:text-xl leading-loose lg:leading-loose">At this stage you would have heard my story and know, just as so many before me and many to follow, I’ve had my own path to travel and it’s not always been straight 
         forward but it has led me to where I am today and it continues to get better and convince me that, miracles actually do happen, every single day.</p>
     </div>
   </div>
@@ -46,7 +46,7 @@ import Sketch1 from '../sketches/sketch1.svelte';
       allows me to truly understand other's issue's, and how best to treat them.
     </blockquote>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-lg lg:text-2xl">My desire today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
+      <p class="text-lg lg:text-2xl leading-loose lg:leading-loose"><span class="text-6xl lg:text-7xl">My desire</span> today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
         This in turn can only benefit those around them, and there we have it, a beautiful ripple effect begins and reaches far and wide, as far as the imagination can take you!</p>
     </div>
   </div>
