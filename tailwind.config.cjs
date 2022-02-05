@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         'Eiko': 'Eiko-Heading',
         'Eiko-Italic': 'Eiko-Italic',
+        'Eiko-Thin':'Eiko-Thin',
       },
       colors:{
       'rose-main': '#B86E7A',	/* Main Primary colour Rose Gold*/

@@ -6,6 +6,10 @@
   src: url('/static/fonts/PPEiko-Light.woff2') format('woff2');
 }
 @font-face {
+  font-family: 'Eiko-Thin';
+  src: url('/static/fonts/PPEiko-Thin.woff2') format('woff2');
+}
+@font-face {
   font-family: 'Eiko-Italic';
   src: url('/static/fonts/PPEiko-ThinItalic.woff2') format('woff2');
 }
