@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
-    <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
+    <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start m-1 p-1">
       <h2 class="text-4xl pr-2 sm:text-5xl sm:mb-20 md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-right font-Eiko-Italic 2xl:pr-8">
         A natural therapy that can help you to cope with the problems and challenges of everyday life like anxiety, phobias, fears, self esteem or even addiction to name but a few.
       </h2>
