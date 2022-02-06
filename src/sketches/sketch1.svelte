@@ -43,6 +43,6 @@ const sketch = (p5) => {
 };
 </script>
 
-<div class="fixed z-15 top-0 left-0">
+<div class="fixed -z-15 top-0 left-0">
   <P5 {sketch} debug />
 </div>

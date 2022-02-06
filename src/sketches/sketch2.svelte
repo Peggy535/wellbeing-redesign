@@ -1,45 +1,45 @@
 <script>
 import P5 from "p5-svelte";
 
-let x_off1 = 0;
-let x_off2 = 1000;
+//let x_off1 = 0;
+//let x_off2 = 1000;
+let inc = 0.01;
+let scl = 20;
+let cols, rows;
 
 const sketch = (p5) => {
   p5.setup = () => {
     p5.createCanvas(p5.windowWidth, p5.windowHeight);
+    cols = p5.floor(p5.width/scl);
+    rows = p5.floor(p5.height/scl);
+    p5.pixelDensity(1);
   };
   p5.windowResized = () => {
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
-    console.log(p5.windowWidth+', '+p5.windowHeight);
   };
   p5.draw = () => {
-    p5.background(51);
-    /* //let x = p5.random(p5.windowWidth);
-    let x_noise = p5.map(p5.noise(x_off1), 0, 1, 0, p5.width);
-    let y_noise = p5.map(p5.noise(x_off2), 0, 1, 0, p5.height);
-    p5.ellipse(x_noise, y_noise, 24, 24);
-    x_off1 += 0.02;
-    x_off2 += 0.02; */
-    p5.stroke(255);
-    p5.noFill();
-    p5.beginShape();
-    let x_off = 0;
-    for(let x=0; x < p5.width; x++){
-      p5.stroke(255);
-      //let y = p5.random(p5.height);
-      let y = p5.noise(x_off)*p5.height;
-      p5.vertex(x, y);
-      x_off += 0.01;
+    let yoff=0;
+
+    /* p5.loadPixels();
+    for(let y=0; y < p5.height; y++){
+      let xoff=0;
+      for(let x=0; x < p5.width; x++){
+        let index = (x + y * p5.width)*4;
+        p5.noiseDetail(1);
+        let r = p5.noise(xoff, yoff) * 255;
+        p5.pixels[index+0]=r;
+        p5.pixels[index+1]=r;
+        p5.pixels[index+2]=r;
+        p5.pixels[index+3]=255;
+        xoff += inc;
+      }
+      yoff += inc;
     }
-    p5.endShape();
+    p5.updatePixels(); */
   };
 };
 </script>
 
-<section class="h-screen w-screen z-40">
-  <div class="grid h-screen w-screen grid-rows-4 grid-cols-1 gap-3">
-    <div class="grid items-center">
-      <P5 {sketch} debug/>
-    </div>
-  </div>  
-</section>
+<div class="fixed -z-15 top-0 left-0">
+  <P5 {sketch} debug/>
+</div>
