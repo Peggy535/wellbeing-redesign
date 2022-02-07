@@ -51,7 +51,8 @@ import Sketch1 from '../sketches/sketch1.svelte';
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>
-    <a href="/relaxation">Relaxation</a>
+    <a href="/relaxation">Relaxation |</a>
+    <a href="/cbt">CBT |</a>
   </nav>
 </section>
 
