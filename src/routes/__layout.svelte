@@ -3,5 +3,4 @@ import "../app.css";
 
 </script>
 
-
 <slot />

@@ -4,15 +4,19 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 onMount(() => {
-  // Debug
-  const gui = new dat.GUI({ width: 340 });
   // Canvas
   const canvas = document.querySelector('canvas.webgl');
   // Scene
   const scene = new THREE.Scene();
+  // Geometry
+  const geometry = new THREE.BoxGeometry();
+  const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+  const cube = new THREE.Mesh( geometry, material );
+  scene.add( cube );
+
   /**
- * Sizes
- */
+  * Sizes
+  */
   const sizes = {
       width: window.innerWidth,
       height: window.innerHeight
@@ -45,7 +49,8 @@ onMount(() => {
    * Renderer
     */
   const renderer = new THREE.WebGLRenderer({
-      canvas: canvas
+      canvas: canvas,
+      autoClear: true,
   })
   renderer.setSize(sizes.width, sizes.height)
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
@@ -67,7 +72,11 @@ onMount(() => {
 })
 
 </script>
-
-<div class="fixed -z-15 top-0 left-0">
+<!-- <div class="fixed -z-15 top-0 left-0">
   <canvas class="webgl" ></canvas>
-</div>
+</div> -->
+<!-- <nav class="absolute top-0 text-white">
+  <a href="/">Home | </a>
+  <a href="/hypnotherapy">Hypnotherapy | </a>
+  <a href="/relaxation">Relaxation</a>
+</nav> -->
