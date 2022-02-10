@@ -23,7 +23,7 @@
   </div>
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid h-fit col-span-1 row-span-1 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-end sm:items-center 2xl:place-content-end my-10">
-      <p class="text-md sm:text-xl md:text2xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose text-right">The advantage
+      <p class="text-md sm:text-xl md:text2xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose">The advantage
         that ‘CBT’ has over other therapies is that clients undergoing ‘CBT’ treatment are actually learning the educational aspects of the therapy, which is then empowering them to become 
         their own personal therapist and to be more aware of the circumstances, situations, behaviours and people that could cause them to lapse and therefore to be able to avoid these aspects in their lives.
       </p>

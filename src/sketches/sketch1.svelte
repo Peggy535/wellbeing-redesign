@@ -2,19 +2,19 @@
 import P5 from "p5-svelte";
 
 const sketch = (p5) => {
-  let w = p5.displayWidth;
-  let h = p5.displayHeight;
+  let w = p5.windowWidth;
+  let h = p5.windowHeight;
   p5.setup = () => {
     p5.createCanvas(w, h);
     //p5.background(184,110,122);
     // translucent stroke using alpha value
-    p5.stroke(219,161,170, 15);
+    p5.stroke(184,110,122,30);
   };
   const randomChord = () => {
     // find a random point on a circle
     let angle1 = p5.randomGaussian(0, 2 * p5.PI);
-    let xpos1 = w + w * p5.cos(angle1);
-    let ypos1 = h + h * p5.sin(angle1);
+    let xpos1 = 300 + 300 * p5.cos(angle1);
+    let ypos1 = 300 + 300 * p5.sin(angle1);
 
     // find another random point on the circle
     let angle2 = p5.randomGaussian(0, 2 * p5.PI);
@@ -29,7 +29,7 @@ const sketch = (p5) => {
   };
   let chordCounter = 0;
   p5.draw = () => {
-    if(chordCounter < 5000){ 
+    if(chordCounter < 3500){ 
       randomChord();
       randomChord();
       randomChord();
