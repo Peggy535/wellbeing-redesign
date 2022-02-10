@@ -1,73 +1,28 @@
 <script>
-import { onMount } from 'svelte';
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+  import P5 from 'p5-svelte';
 
-onMount(() => {
-  // Debug
-  const gui = new dat.GUI({ width: 340 });
-  // Canvas
-  const canvas = document.querySelector('canvas.webgl');
-  // Scene
-  const scene = new THREE.Scene();
-  /**
- * Sizes
- */
-  const sizes = {
-      width: window.innerWidth,
-      height: window.innerHeight
-  }
-  window.addEventListener('resize', () =>
-  {
-      // Update sizes
-      sizes.width = window.innerWidth
-      sizes.height = window.innerHeight
   
-      // Update camera
-      camera.aspect = sizes.width / sizes.height
-      camera.updateProjectionMatrix()
+  const sketch = (p5) => {
+    let w = p5.displayWidth;
+    let h = p5.displayHeight;
+    let x, y;
+    
+    p5.setup = () => {
+      p5.createCanvas(w, h);
+     
+    };
+    const resize = () => {
+    p5.windowResized = () => {
+      p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+      
+    };
+  };
   
-      // Update renderer
-      renderer.setSize(sizes.width, sizes.height)
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-  })
-  /**
-   * Camera
-    */
-  // Base camera
-  const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-  camera.position.set(3, 4, 3)
-  scene.add(camera)
-  // Controls
-  const controls = new OrbitControls(camera, canvas)
-  controls.enableDamping = true
-  /**
-   * Renderer
-    */
-  const renderer = new THREE.WebGLRenderer({
-      canvas: canvas
-  })
-  renderer.setSize(sizes.width, sizes.height)
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-  /**
-   * Animate
-    */
-  const clock = new THREE.Clock()
-  const tick = () =>
-  {
-      const elapsedTime = clock.getElapsedTime()
-      // Update controls
-      controls.update()
-      // Render
-      renderer.render(scene, camera)
-      // Call tick again on the next frame
-      window.requestAnimationFrame(tick)
-  }
-  tick()
-})
-
+    p5.draw = () => {
+     
+    };
+  };
 </script>
-
 <div class="fixed -z-15 top-0 left-0">
-  <canvas class="webgl" ></canvas>
+  <P5 {sketch} debug />
 </div>

@@ -1,5 +1,11 @@
-
-
+<script>
+  //import { onMount } from "svelte";
+  import P5 from "p5-svelte";
+  //import gsap from 'gsap';
+  import Sketch2 from '../sketches/sketch2.svelte';
+</script>
+  
+<Sketch2/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
@@ -72,5 +78,6 @@
     <a href="/hypnotherapy">Hypnotherapy | </a>
     <a href="/relaxation">Relaxation |</a>
     <a href="/cbt">CBT |</a>
+    <a href="/aboutjh">About JH</a>
   </nav>
 </section>

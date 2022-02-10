@@ -185,7 +185,8 @@ onMount(() => {
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>
-    <a href="/relaxation">Relaxation |</a>
-    <a href="/cbt">CBT |</a>
+    <a href="/relaxation">Relaxation | </a>
+    <a href="/cbt">CBT | </a>
+    <a href="/aboutjh">About JH</a>
   </nav>
 </section>
