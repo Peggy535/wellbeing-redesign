@@ -2,13 +2,13 @@
 import P5 from "p5-svelte";
 
 const sketch = (p5) => {
-  let w = p5.windowWidth;
-  let h = p5.windowHeight;
+  let w = p5.displayWidth;
+  let h = p5.displayHeight;
   p5.setup = () => {
     p5.createCanvas(w, h);
     //p5.background(184,110,122);
     // translucent stroke using alpha value
-    p5.stroke(184,110,122,30);
+    p5.stroke(255,232,218,50);
   };
   const randomChord = () => {
     // find a random point on a circle
@@ -29,7 +29,8 @@ const sketch = (p5) => {
   };
   let chordCounter = 0;
   p5.draw = () => {
-    if(chordCounter < 3500){ 
+    if(chordCounter < 5000){
+      p5.translate(-w/10, -h/10); 
       randomChord();
       randomChord();
       randomChord();

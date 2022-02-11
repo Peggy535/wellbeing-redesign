@@ -2,8 +2,8 @@
   import P5 from 'p5-svelte';
 
   const sketch = (p5) => {
-    let w = p5.windowWidth;
-    let h = p5.windowHeight;
+    let w = p5.displayWidth;
+    let h = p5.displayHeight;
     let pos, vel;
 
     p5.setup = () => {
@@ -20,7 +20,7 @@
       
     };
     function show() {
-      p5.translate(w*0.66, h/6);
+      p5.translate(w*0.9, h/6);
       p5.stroke(0, 15);
       p5.strokeWeight(1);
       //vel = p5.createVector(p5.random(-50, 50), p5.random(-50, 50));

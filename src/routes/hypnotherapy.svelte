@@ -4,12 +4,13 @@
   //import gsap from 'gsap';
   import Sketch2 from '../sketches/sketch2.svelte';
 </script>
-  
+ 
+
 <Sketch2/>
-<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
+<section class="absolute z-20 top-0 w-screen m-0 p-0">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin font text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">Hypnotherapy</h1>
+      <h1 class="font-Eiko-Thin text-rose-main font text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">Hypnotherapy</h1>
     </div>
   </div>
   <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-5">

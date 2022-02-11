@@ -13,6 +13,7 @@ module.exports = {
       'rose-2': '#DBA1AA',
       'rose-3': '#9A4955',
       'rose-4': '#7E2A37',
+      'rose-gray-1': '#595253',
       'beige-main': '#C39274',	/* Beige Secondary color (1) */
       'beige-1': '#FFE8DA',
       'beige-2': '#E8C2AA',
