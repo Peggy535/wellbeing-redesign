@@ -10,44 +10,44 @@ import Sketch1 from '../sketches/sketch1.svelte';
 <section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin text-rose-main text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">JH Online Therapies</h1>
+      <h1 class="font-Eiko-Thin text-rose-main text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">JH Online Therapies</h1>
     </div>
   </div>
 
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
-      <h1 class="text-rose-main text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-12xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
+      <h1 class="text-rose-main text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
     </div>
-    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
-      <p class="text-rose-gray-1 text-lg sm:text-xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl text-rose-main">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
+      <p class="text-slate-900 text-sm sm:text-sm leading-loose sm:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl text-rose-main">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
   <div class="grid grid-cols-2 grid-rows-2 sm:grid-cols-4">
-    <blockquote class="grid h-screen col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 text-rose-main text-7xl pr-2 sm:text-9xl md:text-9xl md:pr-10 lg:text-10xl 
+    <blockquote class="grid h-screen col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 text-rose-main text-7xl pr-2 sm:text-8xl md:text-9xl md:pr-10 lg:text-10xl 
                        xl:text-10xl 2xl:text-13xl text-right">
-      You are beautiful, unique and deserving of all good things.<cite class="text-sm">Justine Hodgson</cite>
+      You are beautiful, unique and deserving of all good things.<cite class="text-sm">- Justine Hodgson</cite>
     </blockquote>
-    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 place-content-evenly lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
-      <p class="text-rose-gray-1 text-lg lg:text-xl leading-loose lg:leading-loose">By now hopefully, you've pressed the play button on both my welcome and about me recordings and I've saved you valuable time on reading a 
+    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 place-content-evenly lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2">
+      <p class="text-slate-900 text-sm leading-loose"><span class="text-6xl lg:text-7xl text-rose-main">By</span> now hopefully, you've pressed the play button on both my welcome and about me recordings and I've saved you valuable time on reading a 
         page full of words without much connection. As a hypnotherapist, it's important you get a feel for my voice and personality if we are going to do some work together. 
-        I'm also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p><br/>
-      <p class="text-rose-gray-1 text-lg lg:text-xl leading-loose lg:leading-loose">At this stage you would have heard my story and know, just as so many before me and many to follow, I've had my own path to travel and it's not always been straight 
+        I'm also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p><br/><br/>
+      <p class="text-slate-900 text-sm leading-loose">At this stage you would have heard my story and know, just as so many before me and many to follow, I've had my own path to travel and it's not always been straight 
         forward but it has led me to where I am today and it continues to get better and convince me that, miracles actually do happen, every single day.</p>
     </div>
   </div>
   <div class="grid grid-cols-2 grid-rows-2 sm:grid-cols-4 place-content-evenly">
-    <blockquote class="grid h-screen text-rose-main sm:h-auto items-center pr-2 md:pr-10 col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 lg:col-start-2 lg:col-end-5 text-4xl sm:text-5xl md:text-6xl lg:text-6xl 
-                       xl:text-7xl 2xl:text-7xl text-right px-3 mb-10 sm:mb-20 lg:mb-30">
+    <blockquote class="grid h-auto text-rose-main sm:h-auto items-center pr-2 md:pr-10 col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 lg:col-start-2 lg:col-end-5 text-4xl sm:text-5xl md:text-6xl lg:text-6xl 
+                       xl:text-7xl 2xl:text-7xl text-right px-3 my-20 sm:mb-20 lg:mb-30 leading-10">
       Having personally experienced such things as anxiety, trauma and chronic fatigue syndrome, and having recovered through the same therapies I offer today, 
       allows me to truly understand other's issue's, and how best to treat them.
     </blockquote>
-    <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-center">
-      <p class="text-rose-gray-1 text-lg lg:text-xl leading-loose lg:leading-loose"><span class="text-6xl lg:text-7xl text-rose-main">My desire</span> today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
+    <div class="grid h-auto col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-start">
+      <p class="text-slate-900 text-sm leading-loose"><span class="text-6xl text-rose-main">My</span>desire today and every day hereon, is to make people feel less broken, so they can experience more joy and happiness and less stress in their lives. 
         This in turn can only benefit those around them, and there we have it, a beautiful ripple effect begins and reaches far and wide, as far as the imagination can take you!</p>
     </div>
   </div>
-  <footer class="text-smm-1 p-1"><cite>Artwork - 'Thoughts become things'</cite></footer>
+  <footer class="text-sm m-1 p-1"><cite>Artwork - 'Thoughts become things'</cite></footer>
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>

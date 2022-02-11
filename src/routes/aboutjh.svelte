@@ -1,9 +1,9 @@
 <script>
-  
+  import Sketch3 from "../sketches/sketch3.svelte";
 
 </script>
 
-
+<Sketch3/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
