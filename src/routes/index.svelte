@@ -10,16 +10,19 @@ import Sketch1 from '../sketches/sketch1.svelte';
 <section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin text-rose-main text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">JH Online Therapies</h1>
+      <h1 class="font-Eiko-Thin text-rose-main text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">JH Relaxation Therapies</h1>
     </div>
   </div>
 
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
       <h1 class="text-rose-main text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
+      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Italic">Your go to specialist in anxiety and stress relief:</h6>
+      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Italic">If Hypnotherapy isn't your thing - then Relaxation Therapy is the way to go.</h6>
+      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Italic">If talk therapy is more your thing - CBT/MCBT is the best route for you.</h6>
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
-      <p class="text-slate-900 text-sm sm:text-sm leading-loose sm:leading-relaxed lg:leading-loose"><span class="text-6xl lg:text-7xl text-rose-main">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+      <p class="text-slate-900 text-sm sm:text-sm leading-loose sm:leading-relaxed lg:leading-loose"><span class="font-Eiko-Italic text-6xl lg:text-7xl text-rose-main">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
