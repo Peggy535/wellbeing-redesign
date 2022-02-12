@@ -10,17 +10,17 @@ import Sketch1 from '../sketches/sketch1.svelte';
 <section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin text-rose-main text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">JH Relaxation Therapies</h1>
+      <h1 class="font-Eiko-Thin text-rose-main text-3xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">JH Relaxation Therapies</h1>
     </div>
   </div>
 
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
-      <h1 class="text-rose-main text-7xl pr-2 sm:text-9xl sm:mb-20 md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
-      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Thin">Your go to specialist in anxiety and stress relief offering:</h6>
-      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Thin">Curative Hypnotherapy</h6>
-      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Thin">Relaxation Therapy (A unique alternative to Hypnotherapy)</h6>
-      <h6 class="text-rose-main text-lg pl-2 font-Eiko-Thin">CBT/MCBT (If you prefer talk therapy)</h6>
+      <h1 class="text-rose-main text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl sm:mb-20 md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
+      <p class="text-slate-900 text-sm pr-2 md:pr-10 text-right font-Eiko-Thin">Your go to specialist in anxiety and stress relief offering:</p>
+      <p class="text-slate-900 text-xs pr-2 md:pr-10 text-right font-Eiko-Thin">Curative Hypnotherapy</p>
+      <p class="text-slate-900 text-xs pr-2 md:pr-10 text-right font-Eiko-Thin">Relaxation Therapy (A unique alternative to Hypnotherapy)</p>
+      <p class="text-slate-900 text-xs pr-2 md:pr-10 text-right font-Eiko-Thin">CBT/MCBT (If you prefer talk therapy)</p>
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
       <p class="text-slate-900 text-sm sm:text-sm leading-loose sm:leading-relaxed lg:leading-loose"><span class="font-Eiko-Italic text-6xl lg:text-7xl text-rose-main">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
@@ -36,7 +36,7 @@ import Sketch1 from '../sketches/sketch1.svelte';
       <p class="text-slate-900 text-sm leading-loose"><span class="font-Eiko-Italic text-6xl lg:text-7xl text-rose-main">By</span> now hopefully, you've pressed the play button on my welcome message above. 
         As a hypnotherapist, it's important you get a feel for my voice and personality if we are going to do some work together. 
         I'm also a strong believer in being as real on paper as I am in person, hopefully this all resonates and feels authentic for every visitor to my site.</p><br/>
-      <p class="text-slate-900 text-sm leading-loose"><span class="font-Eiko-Italic text-5xl lg:text-7xl text-rose-main">Just</span> as so many before me and many to follow, I've had my own path to travel and it's not always been straight 
+      <p class="text-slate-900 text-sm leading-loose">Just as so many before me and many to follow, I've had my own path to travel and it's not always been straight 
         forward but it has led me to where I am today and it continues to get better and convince me that, miracles actually do happen.</p>
     </div>
   </div>
