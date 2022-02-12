@@ -60,13 +60,14 @@
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-4 sm:row-span-1 items-start">
       <h2 class="text-green-main text-4xl m-1 p-1 sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl text-right font-Eiko-Italic md:p-4 lg:p-6 2xl:p-8">
-        If you think Hypnotherapy can help you or someone you know, just go ahead and contact me.
+        If you think Hypnotherapy can help you or someone you know, just go ahead and contact me.<br/> £55 for a 45 min online session.
       </h2>
+      <cite class="text-sm">I offer special student and Long Covid 'long-haulers' rates of £45 per session.</cite>
     </div>
   </div>
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid h-fit col-span-1 row-span-1 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-end sm:items-center 2xl:place-content-end">
-      <h2 class="text-green-main pb-10 font-Eiko-Italic text-4xl">A useful tip...</h2><br>
+      <h2 class="text-green-main pb-10 font-Eiko-Italic text-7xl">A useful tip...</h2><br>
       <p class="text-slate-600 text-sm my-16 leading-relaxed"><span class="text-green-main text-4xl md:text-6xl lg:text-6xl">Many</span>people 
         imagine that the hypnotist has to do all the work without realising that the hypnotist only does all the work while they are talking and during the session. As the client drifts deeper into the 
         experience they begin to discover that each session is a partnership of two minds. The hypnotists works the unconscious mind while the client follows instructions inside and outside the therapy 

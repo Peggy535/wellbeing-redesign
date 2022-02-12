@@ -30,5 +30,20 @@
         of their lives and even causing ill health. So putting all of my skill set together from past and present I am now offering 'Relaxation Therapy' a combination 
         of relaxation techniques catered for the individual and their own needs and requirements.
       </p>
-   
+      <nav>
+        <a href="/">Home | </a>
+        <a href="/hypnotherapy">Hypnotherapy | </a>
+        <a href="/relaxation">Relaxation | </a>
+        <a href="/cbt">CBT | </a>
+        <a href="/aboutjh">About JH |</a>
+        <a href="/hireme">HireJH</a>
+      </nav>
 </section>
+<nav>
+  <a href="/">Home | </a>
+  <a href="/hypnotherapy">Hypnotherapy | </a>
+  <a href="/relaxation">Relaxation | </a>
+  <a href="/cbt">CBT | </a>
+  <a href="/aboutjh">About JH |</a>
+  <a href="/hireme">HireJH</a>
+</nav>
