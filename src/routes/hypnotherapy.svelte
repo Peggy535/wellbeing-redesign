@@ -22,7 +22,7 @@
   </div>
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid col-span-1 row-span-1 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-end 2xl:place-content-end">
-      <p class="text-slate-600 text-sm leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-green-main text-5xl md:text-6xl lg:text-6xl">Curative</span> hypnotherapy is a more 
+      <p class="text-slate-600 text-md leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose"><span class="text-green-main text-5xl md:text-6xl lg:text-6xl">Curative</span> hypnotherapy is a more 
         holistic feel to the sessions and work we do together. The word 'hypnotherapy' is derived from 'hypno' - relating to 'hypnosis', and 'therapy' because of the therapeutic suggestions that 
         are given during treatment.
       </p>
@@ -37,7 +37,7 @@
   </div>
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-center 2xl:hidden">
-      <p class="text-slate-600 text-sm leading-relaxed"><span class="text-green-main text-5xl md:text-6xl lg:text-7xl">You </span>are not asleep, but it is something 
+      <p class="text-slate-600 text-md leading-relaxed"><span class="text-green-main text-5xl md:text-6xl lg:text-7xl">You </span>are not asleep, but it is something 
         like a state just before you drift off to sleep - you can still hear everything, speak and even move around if you wished to. When you are in that state, your subconscious mind is more accessible 
         and open to suggestion.
       </p>
@@ -53,7 +53,7 @@
   </div>
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-center">
-      <p class="text-slate-600 text-sm leading-relaxed">It can be used to treat anxiety, phobias, compulsions (like over eating) and addictions (like smoking). 
+      <p class="text-slate-600 text-md leading-relaxed">It can be used to treat anxiety, phobias, compulsions (like over eating) and addictions (like smoking). 
         It can help with pain management and can ease the symptoms of chronic conditions such as asthma and IBS. Although it cannot cure physical illnesses or infections, it can help boost the immune system and 
         improve our ability to manage illness.
       </p>
@@ -67,7 +67,7 @@
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid h-fit col-span-1 row-span-1 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-end sm:items-center 2xl:place-content-end">
       <h2 class="text-green-main pb-10 font-Eiko-Italic text-4xl">A useful tip...</h2><br>
-      <p class="text-slate-600 text-sm my-16 leading-loose sm:leading-relaxed"><span class="text-green-main text-4xl md:text-6xl lg:text-6xl">Many</span>people 
+      <p class="text-slate-600 text-sm my-16 leading-relaxed"><span class="text-green-main text-4xl md:text-6xl lg:text-6xl">Many</span>people 
         imagine that the hypnotist has to do all the work without realising that the hypnotist only does all the work while they are talking and during the session. As the client drifts deeper into the 
         experience they begin to discover that each session is a partnership of two minds. The hypnotists works the unconscious mind while the client follows instructions inside and outside the therapy 
         session using the conscious mind, this allows the work to be completed both consciously and unconsciously. 

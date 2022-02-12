@@ -38,7 +38,7 @@
   </div>
   <div class="grid grid-cols-1 grid-rows-1 sm:grid-cols-4">
     <div class="grid h-fit col-span-1 row-span-1 sm:col-span-3 sm:row-span-1 lg:col-span-2 m-1 p-1 my-10 lg:m-2 lg:p-2 items-end sm:items-center 2xl:place-content-end">
-      <p class="text-md sm:text-xl md:text2xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose">If you think CBT can help you or someone you know, just go ahead and contact me.
+      <p class="text- sm:text-xl md:text2xl leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-loose">If you think CBT can help you or someone you know, just go ahead and contact me.
       </p>
     </div>
   </div>

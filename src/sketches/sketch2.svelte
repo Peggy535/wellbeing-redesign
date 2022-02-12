@@ -15,7 +15,7 @@
     };
     
     const show = () => {
-      p5.stroke(195,146,116,40);
+      p5.stroke(232,194,170,30);
       p5.strokeWeight(1);
       //vel = p5.createVector(p5.random(-50, 50), p5.random(-50, 50));
       vel = p5.Vector.random2D().mult(p5.random(w*1.2,h*1.2));

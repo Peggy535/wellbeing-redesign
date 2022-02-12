@@ -29,7 +29,7 @@ const sketch = (p5) => {
   };
   let chordCounter = 0;
   p5.draw = () => {
-    if(chordCounter < 5000){
+    if(chordCounter < 3500){
       p5.translate(-w/10, -h/10); 
       randomChord();
       randomChord();
