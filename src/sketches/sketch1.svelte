@@ -24,7 +24,7 @@ const sketch = (p5) => {
     p5.line(xpos1, ypos1, xpos2, ypos2);
   };
   p5.windowResized = () => {
-    p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+    p5.resizeCanvas(p5.displayWidth, p5.displayHeight);
 
   };
   let chordCounter = 0;
