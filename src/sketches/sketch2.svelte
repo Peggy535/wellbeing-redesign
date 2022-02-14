@@ -2,8 +2,8 @@
   import P5 from 'p5-svelte';
 
   const sketch = (p5) => {
-    let w = p5.windowWidth;
-    let h = p5.windowHeight;
+    let w = p5.displayWidth;
+    let h = p5.displayHeight;
     let pos, vel;
 
     p5.setup = () => {
@@ -14,6 +14,7 @@
       w = p5.windowWidth;
       h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+      p5.setup();
     };
     const show = () => {
       p5.stroke(232,194,170,30);

@@ -2,8 +2,8 @@
   import P5 from 'p5-svelte';
 
   const sketch = (p5) => {
-    let w = p5.windowWidth;
-    let h = p5.windowHeight;
+    let w = p5.displayWidth;
+    let h = p5.displayHeight;
     let points = [];
     let mult = 0.002;
     
