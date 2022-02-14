@@ -4,7 +4,7 @@
   const sketch = (p5) => {
     let w = p5.displayWidth;
     let h = p5.displayHeight;
-
+    
     p5.setup = () => {
       p5.createCanvas(w, h);
     };
