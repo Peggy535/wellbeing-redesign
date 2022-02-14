@@ -5,15 +5,15 @@
     let w = p5.windowWidth;
     let h = p5.windowHeight;
     let points = [];
-    let mult = 0.01;
+    let mult = 0.002;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
-      p5.background(118,166, 99);
+      p5.background(202,226,193);
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
 
-      let density =  50;
+      let density = 20;
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){

@@ -26,12 +26,12 @@
   </div>
   <div class="grid h-screen grid-cols-1 sm:grid-cols-4 grid-rows-6">
     <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-2 row-span-1">
-      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-3">Relaxation</span> therapy has been 
+      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-4">Relaxation</span> therapy has been 
         specifically designed for Anxiety and Stress relief. It helps reduce muscle tension and stress, lowers blood pressure, and controls pain.
       </p>
     </div>
     <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-2 row-span-2">
-      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-3">What is deep relaxation therapy?</span>
+      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-4">What is deep relaxation therapy?</span>
         The relaxation response is a technique designed to elicit a state of deep relaxation in which breathing, pulse rate, blood pressure and metabolism are decreased. 
         Training our bodies on a daily basis to achieve this state of relaxation can lead to enhanced mood, lowered blood pressure and reduction of lifestyle stress.
       </p>
