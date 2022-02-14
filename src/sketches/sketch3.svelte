@@ -5,7 +5,7 @@
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.002;
+    let mult = 0.005;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
@@ -13,11 +13,11 @@
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
 
-      let density = 20;
+      let density = 50;
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
+          let p = p5.createVector(x + p5.random(-20, 20), y + p5.random(-20, 20));
           points.push(p)
         }
       }

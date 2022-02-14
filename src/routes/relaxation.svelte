@@ -7,7 +7,7 @@
  
 
 <Sketch3/>
-<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-4">
+<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
       <h1 class="font-Eiko-Thin text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">Relaxation Therapy</h1>
@@ -17,28 +17,28 @@
     <div class="grid col-span-1 row-span-1 sm:col-span-full">
       <p class="font-Eiko-Thin text-2xl m-1 p-1 text-slate-800">Hypnotherapy not for you? I've got you covered.</p>
     </div>
-    <div class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-3 row-span-5 items-start md:items-center m-1 p-1">
-      <h2 class="text-4xl pr-2 sm:text-4xl sm:leading-snug mb-20 md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl text-right font-Eiko-Italic md:pr-4 lg:pr-6 2xl:pr-8">
+    <div class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-2 row-span-5 items-start xl:items-center m-1 p-1">
+      <h2 class="text-4xl pr-2 sm:text-4xl sm:leading-snug mb-20 md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-6xl text-right font-Eiko-Italic md:pr-4 lg:pr-6 2xl:pr-8">
         Discover all about your wonderful Parasympathetic nervous system, learn new skills on how to shift out of the dreaded STRESS RESPONSE of the sympathetic 
         nervous system and feel more relaxed more of the time. 
       </h2>
     </div>
   </div>
-  <div class="grid h-screen grid-cols-1 sm:grid-cols-4 grid-rows-6">
-    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-2 row-span-1">
-      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-4">Relaxation</span> therapy has been 
+  <div class="grid h-screen grid-cols-1 sm:grid-cols-4 grid-rows-6 items-center">
+    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-3 row-span-2">
+      <p class="text-sm lg:text-lg m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-3">Relaxation</span> therapy has been 
         specifically designed for Anxiety and Stress relief. It helps reduce muscle tension and stress, lowers blood pressure, and controls pain.
       </p>
     </div>
-    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-2 row-span-2">
-      <p class="text-sm m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-4">What is deep relaxation therapy?</span>
+    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-3 row-span-2">
+      <p class="text-sm lg:text-lg m-1 p-1 text-slate-800"><span class="font-Eiko-Italic text-4xl text-beige-3">What is deep relaxation therapy?</span>
         The relaxation response is a technique designed to elicit a state of deep relaxation in which breathing, pulse rate, blood pressure and metabolism are decreased. 
         Training our bodies on a daily basis to achieve this state of relaxation can lead to enhanced mood, lowered blood pressure and reduction of lifestyle stress.
       </p>
     </div>
-    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-2 row-span-3 m-1 p-1 text-slate-800">
+    <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-3 row-span-2 m-1 p-1 text-slate-800">
       <ul class="grid">
-        <li class="mb-5 md:mb-0 text-sm">Techniques used are visual imagery and body awareness to move a person into a deep state of relaxation, involving:</li>
+        <li class="mb-5 md:mb-0 text-sm lg:text-lg">Techniques used are visual imagery and body awareness to move a person into a deep state of relaxation, involving:</li>
         <li class="m-1 p-1 font-Eiko-Italic text-2xl">Breathwork Techniques</li>
         <li class="m-1 p-1 font-Eiko-Italic text-2xl">Progressive muscle relaxation</li>
         <li class="m-1 p-1 font-Eiko-Italic text-2xl">Meditation</li>
@@ -54,9 +54,6 @@
       £35 for a 30 min or £45 for 40min online session's.
     </p>
   </div>
-  
-  
-  
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>
