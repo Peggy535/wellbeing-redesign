@@ -27,7 +27,6 @@ const sketch = (p5) => {
       w = p5.windowWidth;
       h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
-      p5.redraw();
     };
   let chordCounter = 0;
   p5.draw = () => {

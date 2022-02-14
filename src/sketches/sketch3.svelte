@@ -2,8 +2,8 @@
   import P5 from 'p5-svelte';
 
   const sketch = (p5) => {
-    let w = p5.windowWidth;
-    let h = p5.windowHeight;
+    let w = p5.displayWidth;
+    let h = p5.displayHeight;
     let points = [];
     let mult = 0.005;
     
@@ -12,11 +12,13 @@
       p5.background(118,166, 99);
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
+
+
       let density =  20;
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x, y);
+          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
           points.push(p)
         }
       }
@@ -25,8 +27,6 @@
       w = p5.windowWidth;
       h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
-      p5.redraw();
-     
     };
     // Draw function
     p5.draw = () => {
