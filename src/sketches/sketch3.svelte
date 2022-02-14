@@ -2,15 +2,15 @@
   import P5 from 'p5-svelte';
 
   const sketch = (p5) => {
-    let w = p5.displayWidth;
-    let h = p5.displayHeight;
+    let w = p5.windowWidth;
+    let h = p5.windowHeight;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
     };
     // Specific functions
     p5.windowResized = () => {
-      p5.resizeCanvas(p5.displayWidth, p5.displayHeight);
+      p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
     };
     // Draw function
     p5.draw = () => {
