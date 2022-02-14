@@ -4,17 +4,40 @@
   const sketch = (p5) => {
     let w = p5.windowWidth;
     let h = p5.windowHeight;
+    let points = [];
+    let mult = 0.005;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
+      p5.background(118,166, 99);
+      p5.noiseDetail(1);
+      p5.angleMode(p5.DEGREES);
+      let density =  20;
+      let space = p5.width/density;
+      for(let x = 0; x<p5.width; x+= space){
+        for(let y=0; y < p5.height; y += space){
+          let p = p5.createVector(x, y);
+          points.push(p)
+        }
+      }
     };
-    // Specific functions
     p5.windowResized = () => {
+      w = p5.windowWidth;
+      h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+      p5.redraw();
+     
     };
     // Draw function
     p5.draw = () => {
-      
+      p5.noStroke();
+      p5.fill(160,198,145);
+
+      for(let i =0; i<points.length; i++){
+        let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
+        points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
+        p5.ellipse(points[i].x, points[i].y, 1);
+      }
     };
   };
 

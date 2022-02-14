@@ -11,9 +11,11 @@
     };
     // Specific functions
     p5.windowResized = () => {
+      w = p5.windowWidth;
+      h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+      p5.redraw();
     };
-    
     const show = () => {
       p5.stroke(232,194,170,30);
       p5.strokeWeight(1);
