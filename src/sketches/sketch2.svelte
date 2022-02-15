@@ -8,6 +8,7 @@
 
     p5.setup = () => {
       p5.createCanvas(w, h);
+      p5.background(195,146,116);
     };
     // Specific functions
     p5.windowResized = () => {
@@ -17,7 +18,7 @@
       p5.setup();
     };
     const show = () => {
-      p5.stroke(232,194,170,30);
+      p5.stroke(255,232,218,20);
       p5.strokeWeight(1);
       //vel = p5.createVector(p5.random(-50, 50), p5.random(-50, 50));
       vel = p5.Vector.random2D().mult(p5.random(w*1.2,h*1.2));
