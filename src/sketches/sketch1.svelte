@@ -8,7 +8,7 @@ const sketch = (p5) => {
     p5.createCanvas(w, h);
     //p5.background(184,110,122);
     // translucent stroke using alpha value
-    p5.stroke(244,209,214,80);
+    p5.stroke(219,161,170,30);
   };
   const randomChord = () => {
     // find a random point on a circle
@@ -32,7 +32,7 @@ const sketch = (p5) => {
   let chordCounter = 0;
   p5.draw = () => {
     if(chordCounter < 3500){
-      p5.translate(-w/10, -h/10); 
+      p5.translate(-w/20, -h/10); 
       randomChord();
       randomChord();
       randomChord();

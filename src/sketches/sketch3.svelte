@@ -5,19 +5,30 @@
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.005;
+    let mult = 0.003;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
       p5.background(202,226,193);
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
-
-      let density = 50;
+      let density;
+     if(w < 400) {
+       density = 40;
+     } else if(w <700){
+       density = 50;
+     } else if(w < 1050){
+       density = 60;
+     } else if(w < 1300){
+      density = 70;
+     } else{
+       density = 80;
+     }
+      //console.log(density);
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-20, 20), y + p5.random(-20, 20));
+          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
           points.push(p)
         }
       }
@@ -31,7 +42,7 @@
     // Draw function
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(160,198,145);
+      p5.fill(160,198,145, 70);
 
       for(let i =0; i<points.length; i++){
         let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
