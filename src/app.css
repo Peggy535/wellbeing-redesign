@@ -14,7 +14,7 @@
   src: url('/static/fonts/PPEiko-ThinItalic.woff2') format('woff2');
 }
 * {
-  font-family: 'Eiko-Heading';
+  font-family: 'Eiko-Thin';
 }
 blockquote {
   font-family: 'Eiko-Italic';

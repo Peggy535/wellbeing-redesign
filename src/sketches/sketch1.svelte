@@ -8,8 +8,8 @@ const sketch = (p5) => {
 
   p5.setup = () => {
     p5.createCanvas(w, h);
-    p5.background(126, 42, 55);
-    p5.stroke(184,110,122,25);
+    p5.background(244,209,214);
+    p5.stroke(219,161,170, 40);
     if(w < 400) {
        circleWidth = 200;
      } else if(w <700){
