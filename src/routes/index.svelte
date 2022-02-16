@@ -25,7 +25,7 @@ import Sketch4 from '../sketches/sketch4.svelte';
         </div>
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
-      <p class="font-Eiko-Thin text-md leading-relaxed lg:text-xl text-stone-900"><span class="font-Eiko-Italic text-rose-4 text-7xl lg:text-9xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+      <p class="text-md leading-relaxed lg:text-xl text-stone-900"><span class="font-Eiko-Italic text-rose-4 text-7xl lg:text-9xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
