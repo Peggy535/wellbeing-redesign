@@ -1,5 +1,8 @@
-
-<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
+<script>
+  import Sketch6 from '../sketches/sketch6.svelte';
+</script>
+<Sketch6/>
+<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-rose-4">
   <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
     <div class="grid row-start-3 row-end-4 items-end">
       <h1 class="font-Eiko-Thin text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">About JH</h1>
