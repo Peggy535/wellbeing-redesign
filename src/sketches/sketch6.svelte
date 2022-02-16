@@ -9,7 +9,7 @@
     
     p5.setup = () => {
       p5.createCanvas(w, h);
-      p5.background(58,114, 38);
+      p5.background(160,198,145);
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
       let density;
@@ -42,7 +42,7 @@
     // Draw function
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(202,226,193,70);
+      p5.fill(202,226,193);
 
       for(let i =0; i<points.length; i++){
         let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
