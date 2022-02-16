@@ -5,7 +5,7 @@
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.005;
+    let mult = 0.003;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
@@ -14,11 +14,11 @@
       p5.angleMode(p5.DEGREES);
       let density;
      if(w < 400) {
-       density = 60;
+       density = 30;
      } else if(w <700){
-       density = 70;
+       density = 40;
      } else if(w < 1050){
-       density = 80;
+       density = 60;
      } else if(w < 1300){
       density = 90;
      } else{
