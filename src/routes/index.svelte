@@ -18,14 +18,12 @@ import Sketch4 from '../sketches/sketch4.svelte';
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
       <div class="flex flex-col text-stone-900 pr-2">
-          <p class="text-sm m-1 p-1 pr-2 md:pr-10 text-right">Your go to specialist in anxiety and stress relief.
-          <p class="text-sm m-1 p-1 pr-2 md:pr-10 text-right">Curative Hypnotherapy</p>
-          <p class="text-sm m-1 p-1 pr-2 md:pr-10 text-right">Relaxation Therapy (A unique alternative to Hypnotherapy)</p>
-          <p class="text-sm m-1 p-1 pr-2 md:pr-10 text-right">CBT/MCBT (If you prefer talk therapy)</p>
+          <p class="text-sm m-1 p-1 pr-2 md:pr-10 text-right font-Eiko-Italic text-stone-200">Your go to specialist in anxiety and stress relief:<br>Curative Hypnotherapy<br>Relaxation Therapy<br>CBT/MCBT
+          </p>
         </div>
     </div>
     <div class="grid col-start-1 col-end-3 row-start-2 row-end-3 sm:col-span-2 sm:row-span-1 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 place-items-start">
-      <p class="text-md leading-relaxed lg:text-xl text-stone-900"><span class="font-Eiko-Italic text-rose-4 text-7xl lg:text-9xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
+      <p class="text-xl font-Eiko-Thin leading-relaxed lg:text-xl text-stone-200"><span class="font-Eiko-Italic text-rose-4 text-7xl lg:text-9xl">Hello</span> and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. Whatever you are facing at this time 
         in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.</p>
     </div>
   </div>
