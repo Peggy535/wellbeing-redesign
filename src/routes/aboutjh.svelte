@@ -1,13 +1,13 @@
 <script>
   import Sketch6 from '../sketches/sketch6.svelte';
+  import SectionTitle from "../components/Section_Title.svelte";
+
 </script>
 <Sketch6/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-rose-main">
-  <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
-    <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">About JH</h1>
-    </div>
-  </div>
+  <SectionTitle>
+    About JH
+  </SectionTitle>
   <div class="grid grid-cols-1 grid-rows-3 items-center">
     <p class=""> Before qualifying as a Curative hypnotherapist & CBT practitioner, and now specialising in Anxiety and Stress Therapy. 
       I was a very successful health & fitness professional. My previous career spanned across a number of decades. Many of my job roles opened up huge opportunities to 

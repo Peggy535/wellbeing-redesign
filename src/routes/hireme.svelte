@@ -1,12 +1,17 @@
+<script>
+  import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
+</script>
+
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
-  <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
-    <div class="grid row-start-3 row-end-4 items-end">
-      <h1 class="font-Eiko-Thin font text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">Hire JH</h1>
-      <h6 class="font-Eiko-Thin font text-xl sm:text-2xl md:text-3xl lg:text-9xl xl:text-12xl 2xl:text-14xl pl-3 sm:pl-3 md:pl-4 lg:pl-6 2xl:pl-10">
-        Need a speaker? 
-      </h6>
-    </div>
-  </div>
+  <SectionTitleSubheading>
+    <svelte:fragment slot="title">
+      Hire JH
+    </svelte:fragment>
+    <svelte:fragment slot="subtitle">
+      Need a speaker?
+    </svelte:fragment>
+  </SectionTitleSubheading>
+      
   <div class="grid h-screen grid-cols-1 grid-rows-3 items-center">
     <p class="grid cols-span-1 row-span-1 text-md leading-relaxed m-1 p-1"> 
       I'm available for public speaking and workshops within the UK and globally.<br/><br/>

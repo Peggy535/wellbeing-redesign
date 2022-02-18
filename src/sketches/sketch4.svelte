@@ -1,11 +1,12 @@
 <script>
   import P5 from 'p5-svelte';
+  import {onDestroy} from 'svelte';
 
   const sketch = (p5) => {
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.005;
+    let mult = 0.003;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
@@ -42,7 +43,7 @@
     // Draw function
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(244,209,214,25);
+      p5.fill(244,209,214,30);
 
       for(let i =0; i<points.length; i++){
         let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
@@ -51,7 +52,7 @@
       }
     };
   };
-
+  
 </script>
 <div class="fixed -z-15 top-0 left-0">
   <P5 {sketch} debug />

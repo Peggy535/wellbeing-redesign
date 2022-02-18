@@ -13,10 +13,5 @@
   font-family: 'Eiko-Italic';
   src: url('/static/fonts/PPEiko-ThinItalic.woff2') format('woff2');
 }
-* {
-  font-family: 'Eiko-Heading';
-}
-blockquote {
-  font-family: 'Eiko-Italic';
-}
+
 @tailwind utilities;
