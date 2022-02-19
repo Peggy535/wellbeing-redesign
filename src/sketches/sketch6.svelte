@@ -5,7 +5,7 @@
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.003;
+    let mult = 0.002;
     
     p5.setup = () => {
       p5.createCanvas(w, h);
@@ -18,17 +18,17 @@
       } else if(w <700){
         density = 40;
       } else if(w < 1050){
-        density = 60;
+        density = 50;
       } else if(w < 1300){
-        density = 90;
+        density = 60;
       } else{
-        density = 100;
+        density = 70;
       }
       //console.log(density);
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
+          let p = p5.createVector(x + p5.random(-25, 25), y + p5.random(-25, 25));
           points.push(p)
         }
       }

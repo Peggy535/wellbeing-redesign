@@ -1,7 +1,9 @@
 <script>
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
+  import Sketch7 from "../sketches/sketch7.svelte";
 </script>
 
+<Sketch7/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
   <SectionTitleSubheading>
     <svelte:fragment slot="title">

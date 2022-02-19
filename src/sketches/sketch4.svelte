@@ -17,13 +17,13 @@
      if(w < 400) {
        density = 30;
      } else if(w <700){
-       density = 50;
+       density = 40;
      } else if(w < 1050){
-       density = 70;
+       density = 50;
      } else if(w < 1300){
-      density = 90;
+        density = 60;
      } else{
-       density = 100;
+       density = 70;
      }
       //console.log(density);
       let space = p5.width/density;
@@ -41,14 +41,15 @@
       p5.setup();
     };
     // Draw function
+    let chordCounter = 0;
     p5.draw = () => {
       p5.noStroke();
       p5.fill(244,209,214,30);
-
-      for(let i =0; i<points.length; i++){
-        let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
-        points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
-        p5.ellipse(points[i].x, points[i].y, 1);
+        for(let i =0; i<points.length; i++){
+          let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
+          points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
+          p5.ellipse(points[i].x, points[i].y, 1);
+        
       }
     };
   };
