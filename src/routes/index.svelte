@@ -8,33 +8,10 @@ import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
 import BlockQuote from "../components/BlockQuote.svelte";
 import DoubleParagraph from "../components/Double_Paragraph.svelte";
 import BlockStatement from "../components/BlockStatement.svelte";
-import {onMount} from 'svelte';
 
-let scroll;
-let reference;
-
-//Initialize everything on component mount
-onMount(async () => {
-		//We need to wait for the document to load in order to import the scroll library
-		const module = await import('locomotive-scroll');
-		const LocomotiveScroll = module.default;
-		const scrollElement = new LocomotiveScroll({
-			el: reference,
-			smooth: true,
-			smartphone: {
-				smooth: true
-			},
-      tablet: {
-        smooth: true
-      },
-			getDirection: true,
-			getSpeed: true,
-			lerp: 0.1
-		});
-	});
 </script>
 <Sketch4/>
-<section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-rose-4 font-Eiko-Thin" data-scroll-container bind:this={reference}>
+<section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-rose-4 font-Eiko-Thin">
   <SectionTitle>
     JH Online Therapies
   </SectionTitle>

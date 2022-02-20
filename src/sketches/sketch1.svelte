@@ -36,12 +36,12 @@ const sketch = (p5) => {
     // draw a line between them
     p5.line(xpos1, ypos1, xpos2, ypos2);
   };
-  p5.windowResized = () => {
+  /* p5.windowResized = () => {
       w = p5.windowWidth;
       h = p5.windowHeight;
       p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
       p5.setup();
-    };
+    }; */
   let chordCounter = 0;
   p5.draw = () => {
     if(chordCounter < 3500){
