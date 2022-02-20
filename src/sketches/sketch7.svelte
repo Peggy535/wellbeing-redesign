@@ -4,18 +4,20 @@
 const sketch = (p5) => {
   let w = p5.displayWidth;
   let h = p5.displayHeight;
+  let segmentCount = 360;
+  let radius = 300;
 
   p5.setup = () => {
     p5.createCanvas(w, h);
     p5.colorMode(p5.HSB, 360, w, h);
   
   };
-  p5.windowResized = () => {
+  /* p5.windowResized = () => {
     w = p5.windowWidth;
     h = p5.windowHeight;
     p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
     p5.setup();
-  };
+  }; */
   // Draw function
   p5.draw = () => {
     
