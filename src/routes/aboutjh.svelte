@@ -5,8 +5,10 @@
 </script>
 <Sketch6/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-rose-main">
-  <SectionTitle>
-    About JH
+  <SectionTitle
+    title="About JH"
+    fontStyle="font-Eiko sm:font-Eiko-Thin"
+  >  
   </SectionTitle>
   <div class="grid grid-cols-1 grid-rows-3 items-center">
     <p class=""> Before qualifying as a Curative hypnotherapist & CBT practitioner, and now specialising in Anxiety and Stress Therapy. 

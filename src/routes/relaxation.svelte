@@ -10,8 +10,9 @@
 
 <Sketch3/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin">
-  <SectionTitle>
-    Relaxation Therapy
+  <SectionTitle
+    title="Relaxation Therapy"
+    fontStyle="font-Eiko sm:font-Eiko-Thin">
   </SectionTitle>
   <div class="grid w-screen h-fit">
     <p class="text-md pl-3 md:pl-4 lg:pl-6 2xl:pl-10 text-stone-700">Hypnotherapy not for you? I've got you covered.</p>

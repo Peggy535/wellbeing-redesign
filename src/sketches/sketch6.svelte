@@ -33,12 +33,7 @@
         }
       }
     };
-    p5.windowResized = () => {
-      w = p5.windowWidth;
-      h = p5.windowHeight;
-      p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
-      p5.setup();
-    };
+    
     // Draw function
     p5.draw = () => {
       p5.noStroke();

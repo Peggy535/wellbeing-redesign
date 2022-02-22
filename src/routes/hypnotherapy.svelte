@@ -13,8 +13,9 @@
 
 <Sketch5/>
 <section class="absolute z-20 top-0 w-screen m-0 p-0 text-green-4 font-Eiko-Thin">
-  <SectionTitle>
-    Hypnotherapy
+  <SectionTitle
+    title="Hypnotherapy"
+    fontStyle="font-Eiko sm:font-Eiko-Thin">
   </SectionTitle>
   <TherapyStatement
     statement="A natural therapy that can help you to cope with the problems and challenges of everyday life like anxiety, phobias, fears, self esteem or even addiction to name but a few."

@@ -1,17 +1,16 @@
 <script>
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
   import Sketch7 from "../sketches/sketch7.svelte";
+  /* import BlotterTest1 from "../sketches/blotterTest1.svelte"; */
 </script>
 
 <Sketch7/>
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none">
-  <SectionTitleSubheading>
-    <svelte:fragment slot="title">
-      Hire JH
-    </svelte:fragment>
-    <svelte:fragment slot="subtitle">
-      Need a speaker?
-    </svelte:fragment>
+  <SectionTitleSubheading
+  fontStyle="font-Eiko sm:font-Eiko-Thin"
+  title="Hire JH"
+  subTitle="Need a speaker?"
+  >
   </SectionTitleSubheading>
       
   <div class="grid h-screen grid-cols-1 grid-rows-3 items-center">
@@ -25,13 +24,13 @@
 
       To discuss more, make contact via Whatsapp or email...
     </p>
-    </div>div
+    </div>
+    <nav>
+      <a href="/">Home | </a>
+      <a href="/hypnotherapy">Hypnotherapy | </a>
+      <a href="/relaxation">Relaxation | </a>
+      <a href="/cbt">CBT | </a>
+      <a href="/aboutjh">About JH |</a>
+      <a href="/hireme">HireJH</a>
+    </nav>
 </section>
-<nav>
-  <a href="/">Home | </a>
-  <a href="/hypnotherapy">Hypnotherapy | </a>
-  <a href="/relaxation">Relaxation | </a>
-  <a href="/cbt">CBT | </a>
-  <a href="/aboutjh">About JH |</a>
-  <a href="/hireme">HireJH</a>
-</nav>

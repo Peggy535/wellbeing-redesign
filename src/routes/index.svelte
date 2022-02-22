@@ -12,21 +12,22 @@ import BlockStatement from "../components/BlockStatement.svelte";
 </script>
 <Sketch4/>
 <section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-rose-4 font-Eiko-Thin">
-  <SectionTitle>
-    JH Online Therapies
+  <SectionTitle
+    title="JH Online Therapies"
+    fontStyle="font-Eiko sm:font-Eiko-Thin"
+  >
   </SectionTitle>
-
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
       <div class="flex flex-col text-stone-900 pr-2">
-          <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl m-1 p-1 pr-2 md:pr-10 text-right font-Eiko-Italic text-rose-50">Your go to specialist 
+          <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl m-1 p-1 pr-2 md:pr-10 text-right font-Eiko-Italic text-neutral-800">Your go to specialist 
             in anxiety and stress relief:<br>Curative Hypnotherapy<br>Relaxation Therapy<br>CBT/MCBT
           </p>
         </div>
     </div>
     <ParagraphVogue
-      textColourParagraph="text-rose-50"
+      textColourParagraph="text-neutral-800"
       textColourWord="text-rose-4"
       largeWord="Hello"
       paragraphWords="and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. 
@@ -38,7 +39,7 @@ import BlockStatement from "../components/BlockStatement.svelte";
     cite="- Justine Hodgson">
   </BlockQuote>
   <DoubleParagraph
-    textColourParagraph="text-rose-50"
+    textColourParagraph="text-neutral-800"
     textColourWord="text-rose-4"
     largeWord="By"
     firstParagraph=" now hopefully, you've pressed the play button on my welcome message above. As a hypnotherapist, it's important you get a feel for my voice and personality if we are going to do some work together."
@@ -52,7 +53,7 @@ import BlockStatement from "../components/BlockStatement.svelte";
   </BlockStatement>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-rose-50"
+        textColourParagraph="text-neutral-800"
         textColourWord="text-rose-4"
         largeWord="My"
         paragraphWords="desire today and every day hereon, is to make people feel less broken, so they 

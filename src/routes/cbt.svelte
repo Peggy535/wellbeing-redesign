@@ -4,13 +4,11 @@
 </script>
 
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden text-rose-main">
-  <SectionTitleSubheading>
-    <svelte:fragment slot="title">
-      Mindful CBT
-    </svelte:fragment>
-    <svelte:fragment slot="subtitle">
-      (Cognitive Behavioural Therapy)
-    </svelte:fragment>
+  <SectionTitleSubheading
+  fontStyle="font-Eiko sm:font-Eiko-Thin"
+  title="Mindful CBT"
+  subTitle="(Cognitive Behavioural Therapy)"
+  > 
   </SectionTitleSubheading>
   <div class="grid h-screen grid-cols-1 sm:grid-cols-4">
     <div class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-2 items-center m-1 p-1">
