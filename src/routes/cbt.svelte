@@ -1,45 +1,47 @@
 <script>
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
-
+  import TherapyStatement from "../components/TherapyStatement.svelte";
+  import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
 </script>
 
-<section class="absolute z-20 top-0 w-screen overflow-x-hidden text-rose-main">
+<section class="absolute z-20 top-0 w-screen overflow-x-hidden text-rose-main font-Eiko-Thin">
   <SectionTitleSubheading
   fontStyle="font-Eiko sm:font-Eiko-Thin"
   title="Mindful CBT"
   subTitle="(Cognitive Behavioural Therapy)"
   > 
   </SectionTitleSubheading>
-  <div class="grid h-screen grid-cols-1 sm:grid-cols-4">
-    <div class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-2 items-center m-1 p-1">
-      <h2 class="text-4xl pr-2 sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-right font-Eiko-Italic md:pr-4 lg:pr-6 2xl:pr-8">
-        Mindful CBT is a talk therapy that focuses on the particular ways in which an individual thinks, behaves and acts, in the attempt to deal successfully with their behavioural, 
-        emotional and social problems and issues.
-      </h2>
-    </div>
-  </div>
+  <TherapyStatement
+    statement="Mindful CBT is a talk therapy that focuses on the particular ways in which an individual thinks, behaves and acts, in the attempt to deal successfully with their behavioural, 
+    emotional and social problems and issues."
+    fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl"
+  >
+  </TherapyStatement>
+
   <div class="grid grid-cols-1 sm:grid-cols-4">
-    <div class="grid h-fit col-span-1 sm:col-span-2 lg:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-center sm:items-center 2xl:place-content-end">
-      <p class="text-sm text-stone-700 leading-relaxed lg:text-xl"><span class="text-rose-main text-6xl font-Eiko-Italic md:text-6xl lg:text-6xl">The</span> difference 
-        between psychotherapy and behavioural therapy is that psychotherapy tends to emphasise the importance of the personal meaning placed upon things and how the majority 
+    <ParagraphVogue
+        textColourParagraph="text-neutral-800"
+        textColourWord="text-rose-main"
+        largeWord="The"
+        paragraphWords=" difference between psychotherapy and behavioural therapy is that psychotherapy tends to emphasise the importance of the personal meaning placed upon things and how the majority 
         of thinking patterns begin in childhood. Behavioural therapy relates to everything the person does. How they act with other people, when they are alone. How they avoid certain aspects 
-        of life and how they engage and interact with the world around them. How active or inactive towards being involved in participating in life on a healthy level.
-      </p>
-    </div>
+        of life and how they engage and interact with the world around them. How active or inactive towards being involved in participating in life on a healthy level.">
+    </ParagraphVogue>
   </div>
+  <TherapyStatement
+    statement="My clients' have experienced amazing results. Especially in stress related disorders."
+    fontSize="text-5xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl"
+  >
+  </TherapyStatement>
   <div class="grid grid-cols-1 sm:grid-cols-4">
-    <div class="grid h-fit col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-2 lg:col-end-6 items-end m-1 p-1">
-      <h2 class="text-4xl pr-2 md:pr-4 lg:pr-6 2xl:pr-8 my-20 sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-8xl text-right font-Eiko-Italic">
-        My clients' have experienced amazing results. Especially in stress related disorders.
-      </h2>
-    </div>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-4">
-    <div class="grid h-fit col-span-1 sm:col-span-2 m-1 p-1 lg:m-2 lg:p-2 items-end sm:items-center 2xl:place-content-end">
-      <p class="text-sm text-stone-700 lg:text-xl">The advantage that CBT has over other therapies is that clients undergoing CBT treatment are actually learning the educational aspects of the therapy, which is then empowering them to become 
-        their own personal therapist and to be more aware of the circumstances, situations, behaviours and people that could cause them to lapse and therefore to be able to avoid these aspects in their lives.
-      </p>
-    </div>
+    <ParagraphVogue
+        textColourParagraph="text-neutral-800"
+        textColourWord="text-rose-main"
+        largeWord="The"
+        paragraphWords=" advantage that CBT has over other therapies is that clients undergoing CBT treatment are actually learning the educational aspects of the therapy, which is then 
+        empowering them to become their own personal therapist and to be more aware of the circumstances, situations, behaviours and people that could cause them to lapse and therefore 
+        to be able to avoid these aspects in their lives.">
+    </ParagraphVogue>
   </div>
   <div class="grid h-fit grid-cols-1 grid-rows-3 sm:grid-cols-4 items-center my-10">
     <h2 class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-3 row-span-2 text-right text-5xl xl:text-6xl m-1 p-1 pr-2 md:pr-4 font-Eiko-Italic">

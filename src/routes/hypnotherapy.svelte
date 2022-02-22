@@ -19,11 +19,12 @@
   </SectionTitle>
   <TherapyStatement
     statement="A natural therapy that can help you to cope with the problems and challenges of everyday life like anxiety, phobias, fears, self esteem or even addiction to name but a few."
+    fontSize="text-5xl pr-2 sm:text-6xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl"
     >
   </TherapyStatement>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-stone-600"
+        textColourParagraph="text-neutral-800"
         textColourWord="text-green-4"
         largeWord="Curative"
         paragraphWords=" hypnotherapy is a more 
@@ -36,7 +37,7 @@
   >
   </BlockStatement>
   <DoubleParagraph
-    textColourParagraph="text-stone-600"
+    textColourParagraph="text-neutral-800"
     textColourWord="text-green-4"
     largeWord="You"
     firstParagraph=" are not asleep, but it is something like a state just before you drift off to sleep - you can still hear everything, speak and even move around if you wished to. When you are in that state, your subconscious mind is more accessible 
@@ -48,7 +49,7 @@
   </DoubleParagraph>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-stone-600"
+        textColourParagraph="text-neutral-800"
         textColourWord="text-green-4"
         largeWord="Many"
         paragraphWords=" people imagine that the hypnotist has to do all the work without realising that the hypnotist only does all the work while they are talking and during the session. 
