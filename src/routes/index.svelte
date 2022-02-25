@@ -26,10 +26,10 @@ onMount(() => {
 
 
 </script>
-<div id="introCover" class="absolute bg-rose-main h-screen w-screen z-100 top-0 left-0 invisible">
+<div id="introCover" class="absolute bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
   <SectionTitle
     title="Your go to specialist"
-    fontStyle="font-Eiko sm:font-Eiko-Thin invisible text-white"
+    fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
   >
   </SectionTitle>
 </div>

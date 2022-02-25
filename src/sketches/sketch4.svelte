@@ -15,7 +15,7 @@
       })
     };
     async function createSketch() {
-      await sleep(21500);
+      await sleep(19900);
 
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
