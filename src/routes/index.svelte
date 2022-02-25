@@ -11,6 +11,7 @@ import {hasVisited} from '../stores.js';
 
 
 onMount(() => {
+
   let tl = gsap.timeline();
   gsap.registerPlugin(TextPlugin);
   
@@ -29,9 +30,10 @@ onMount(() => {
     tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
      .to('#transitionCover', {x:0, duration: 1})
      .to('#transitionCover h1', {autoAlpha:1, duration:1.5})
-     .to('#transitionCover h1', {autoAlpha:0, duration:1})
+     .to('#transitionCover h1', {autoAlpha:0, duration:1}, '>1')
      .to('#transitionCover', {x:-screen.width, duration:1})
-
+     .to('#section_content', {autoAlpha:1})
+     .to('#sketch_4', {autoAlpha:1}, '<');
   }
 });
 
