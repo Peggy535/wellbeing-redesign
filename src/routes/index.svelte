@@ -7,20 +7,32 @@ import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
 import BlockQuote from "../components/BlockQuote.svelte";
 import DoubleParagraph from "../components/Double_Paragraph.svelte";
 import BlockStatement from "../components/BlockStatement.svelte";
+import {hasVisited} from '../stores.js';
+
 
 onMount(() => {
   let tl = gsap.timeline();
   gsap.registerPlugin(TextPlugin);
-  tl.set('#introCover', {y:-1500, autoAlpha:1})
-    .to('#introCover', {y:0, duration:2, ease:'expo.inOut'})
-    .to('#introCover h1', {autoAlpha:1, duration:1.5})
-    .to('#introCover h1', {duration:1.5, text: 'in Anxiety & Stress relief'}, '>2.1')
-    .to('#introCover h1', {duration:1.5, text: 'Curative Hypnotherapy'}, '>2.1')
-    .to('#introCover h1', {duration:1.5, text:'Relaxation Therapy'}, '>2.1')
-    .to('#introCover h1', {duration: 1.5, text:'Mindful CBT'}, '>1.3')
-    .to('#introCover h1', {duration: 1.5, text: 'JH Online Therapies'}, '>1.3')
-    .to('#section_content', {autoAlpha:1})
-    .to('#sketch_4', {autoAlpha:1}, '<');
+  
+  if($hasVisited === false) {
+    tl.set('#introCover', {y:-screen.height, autoAlpha:1})
+      .to('#introCover', {y:0, duration:2, ease:'expo.inOut'})
+      .to('#introCover h1', {autoAlpha:1, duration:1.5})
+      .to('#introCover h1', {duration:1, text: 'Curative Hypnotherapy'}, '>2.1')
+      .to('#introCover h1', {duration:1, text:'Relaxation Therapy'}, '>2.1')
+      .to('#introCover h1', {duration: 1, text:'Mindful CBT'}, '>1.3')
+      .to('#introCover h1', {duration: 1, text: 'JH Online Therapies'}, '>1.3')
+      .to('#section_content', {autoAlpha:1})
+      .to('#sketch_4', {autoAlpha:1}, '<');
+    $hasVisited = true;
+  } else {
+    tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
+     .to('#transitionCover', {x:0, duration: 1})
+     .to('#transitionCover h1', {autoAlpha:1, duration:1.5})
+     .to('#transitionCover h1', {autoAlpha:0, duration:1})
+     .to('#transitionCover', {x:-screen.width, duration:1})
+
+  }
 });
 
 
@@ -28,7 +40,14 @@ onMount(() => {
 </script>
 <div id="introCover" class="absolute bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
   <SectionTitle
-    title="Your go to specialist"
+    title="Your go to specialist in Anxiety & Stress relief"
+    fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
+  >
+  </SectionTitle>
+</div>
+<div id="transitionCover" class="absolute bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
+  <SectionTitle
+    title="Redefining Online Therapies"
     fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
   >
   </SectionTitle>
@@ -47,7 +66,7 @@ onMount(() => {
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
     </div>
     <ParagraphVogue
-      textColourParagraph="text-neutral-800"
+      textColourParagraph="text-white"
       textColourWord="text-rose-4"
       largeWord="Hello"
       paragraphWords="and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. 
@@ -59,7 +78,7 @@ onMount(() => {
     cite="- Justine Hodgson">
   </BlockQuote>
   <DoubleParagraph
-    textColourParagraph="text-neutral-800"
+    textColourParagraph="text-white"
     textColourWord="text-rose-4"
     largeWord="By"
     firstParagraph=" now hopefully, you've pressed the play button on my welcome message above. As a hypnotherapist, it's important you get a feel for my voice and personality if we are going to do some work together."
@@ -73,7 +92,7 @@ onMount(() => {
   </BlockStatement>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-neutral-800"
+        textColourParagraph="text-white"
         textColourWord="text-rose-4"
         largeWord="My"
         paragraphWords="desire today and every day hereon, is to make people feel less broken, so they 

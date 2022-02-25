@@ -9,6 +9,7 @@
   import BlockStatement from "../components/BlockStatement.svelte";
   import DoubleParagraph from "../components/Double_Paragraph.svelte";
   import BookingStatement from "../components/BookingStatement.svelte";
+
 </script>
  
 
