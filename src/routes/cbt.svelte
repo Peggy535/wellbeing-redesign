@@ -2,6 +2,7 @@
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";
   import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
+  import BookingStatement from '../components/BookingStatement.svelte';
 </script>
 
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden text-rose-main font-Eiko-Thin">
@@ -43,11 +44,9 @@
         to be able to avoid these aspects in their lives.">
     </ParagraphVogue>
   </div>
-  <div class="grid h-fit grid-cols-1 grid-rows-3 sm:grid-cols-4 items-center my-10">
-    <h2 class="grid col-span-1 sm:col-start-2 sm:col-end-5 lg:col-start-3 row-span-2 text-right text-5xl xl:text-6xl m-1 p-1 pr-2 md:pr-4 font-Eiko-Italic">
-      To book your online therapy click here...
-    </h2>
-  </div>
+  <BookingStatement
+    statement="Book your online CBT here."
+  ></BookingStatement>
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>

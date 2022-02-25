@@ -5,6 +5,7 @@
   import Sketch3 from '../sketches/sketch3.svelte';
   import SectionTitle from "../components/Section_Title.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";
+  import BookingStatement from '../components/BookingStatement.svelte';
 </script>
  
 
@@ -49,11 +50,9 @@
       </ul>
     </div>
   </div>
-  <div class="grid w-screen">
-    <h6 class="text-3xl m-1 p-1 sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-right font-Eiko-Italic md:p-4 lg:p-6 2xl:p-8">
-      To book your online therapy click here...
-    </h6>
-  </div>
+  <BookingStatement
+    statement="Book a Relaxation Therapy session here."
+  ></BookingStatement>
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>

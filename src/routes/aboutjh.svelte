@@ -25,7 +25,6 @@
     </p>
 
   </div>
-      
       <nav>
         <a href="/">Home | </a>
         <a href="/hypnotherapy">Hypnotherapy | </a>

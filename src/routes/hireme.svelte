@@ -1,5 +1,6 @@
 <script>
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
+  import BookingStatement from '../components/BookingStatement.svelte';
   import Sketch7 from "../sketches/sketch7.svelte";
   /* import BlotterTest1 from "../sketches/blotterTest1.svelte"; */
 </script>

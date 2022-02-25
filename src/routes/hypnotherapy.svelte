@@ -8,6 +8,7 @@
   import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
   import BlockStatement from "../components/BlockStatement.svelte";
   import DoubleParagraph from "../components/Double_Paragraph.svelte";
+  import BookingStatement from "../components/BookingStatement.svelte";
 </script>
  
 
@@ -57,11 +58,10 @@
         follows instructions inside and outside the therapy session using the conscious mind, this allows the work to be completed both consciously and unconsciously.">
     </ParagraphVogue>
   </div>
-  <div class="grid w-screen">
-    <h6 class="text-4xl m-1 p-1 sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl text-right font-Eiko-Italic md:p-4 lg:p-6 2xl:p-8">
-      To book your online therapy click here...
-    </h6>
-  </div>
+  <BookingStatement
+    statement="Book your hypnotherapy session today."
+  ></BookingStatement>
+
   
   <nav>
     <a href="/">Home | </a>

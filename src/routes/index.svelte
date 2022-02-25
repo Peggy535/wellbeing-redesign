@@ -1,7 +1,6 @@
 <script>
-//import { onMount } from "svelte";
-import P5 from "p5-svelte";
-//import gsap from 'gsap';
+import { onMount } from "svelte";
+import gsap from 'gsap';
 import Sketch4 from '../sketches/sketch4.svelte';
 import SectionTitle from "../components/Section_Title.svelte";
 import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
@@ -9,9 +8,35 @@ import BlockQuote from "../components/BlockQuote.svelte";
 import DoubleParagraph from "../components/Double_Paragraph.svelte";
 import BlockStatement from "../components/BlockStatement.svelte";
 
+onMount(() => {
+  let tl = gsap.timeline();
+  gsap.registerPlugin(TextPlugin);
+  tl.set('#introCover', {y:-1500, autoAlpha:1})
+    .to('#introCover', {y:0, duration:2, ease:'expo.inOut'})
+    .to('#introCover h1', {autoAlpha:1, duration:1.5})
+    .to('#introCover h1', {duration:1.5, text: 'in Anxiety & Stress relief'}, '>2.1')
+    .to('#introCover h1', {duration:1.5, text: 'Curative Hypnotherapy'}, '>2.1')
+    .to('#introCover h1', {duration:1.5, text:'Relaxation Therapy'}, '>2.1')
+    .to('#introCover h1', {duration: 1.5, text:'Mindful CBT'}, '>1.3')
+    .to('#introCover h1', {duration: 1.5, text: 'JH Online Therapies'}, '>1.3')
+    .to('#section_content', {autoAlpha:1})
+    .to('#sketch_4', {autoAlpha:1}, '<');
+});
+
+
+
 </script>
-<Sketch4/>
-<section class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-rose-4 font-Eiko-Thin">
+<div id="introCover" class="absolute bg-rose-main h-screen w-screen z-100 top-0 left-0 invisible">
+  <SectionTitle
+    title="Your go to specialist"
+    fontStyle="font-Eiko sm:font-Eiko-Thin invisible text-white"
+  >
+  </SectionTitle>
+</div>
+<div id="sketch_4" class="invisible">
+  <Sketch4/>
+</div>
+<section id="section_content" class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-white font-Eiko-Thin invisible">
   <SectionTitle
     title="JH Online Therapies"
     fontStyle="font-Eiko sm:font-Eiko-Thin"
@@ -20,11 +45,6 @@ import BlockStatement from "../components/BlockStatement.svelte";
   <div class="grid h-screen grid-cols-2 grid-rows-2 sm:grid-cols-4">
     <div class="grid col-start-1 col-end-3 row-start-1 row-end-2 sm:col-span-4 sm:row-span-1 items-start">
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
-      <div class="flex flex-col text-stone-900 pr-2">
-          <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl m-1 p-1 pr-2 md:pr-10 text-right font-Eiko-Italic text-neutral-800">Your go to specialist 
-            in anxiety and stress relief:<br>Curative Hypnotherapy<br>Relaxation Therapy<br>CBT/MCBT
-          </p>
-        </div>
     </div>
     <ParagraphVogue
       textColourParagraph="text-neutral-800"
