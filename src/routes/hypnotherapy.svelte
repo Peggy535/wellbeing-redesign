@@ -8,26 +8,41 @@
   import BlockStatement from "../components/BlockStatement.svelte";
   import DoubleParagraph from "../components/Double_Paragraph.svelte";
   import BookingStatement from "../components/BookingStatement.svelte";
+  import {hasArrayOfFacts} from '../stores.js';
 
-
+  let statement;
   onMount(() => {
+    let tl = gsap.timeline();
+    gsap.registerPlugin(TextPlugin);
+    let classPosition = document.getElementById('section_content');
+    classPosition.classList.add('fixed');
+
     function changeState() {
       classPosition.classList.remove("fixed");
       classPosition.classList.add("absolute");
     }
 
-    let tl = gsap.timeline();
-    gsap.registerPlugin(TextPlugin, Flip);
-    let classPosition = document.getElementById('section_content');
-    classPosition.classList.add('fixed');
-
-    tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
+    if($hasArrayOfFacts.length !== 0){
+      let arrayLength = $hasArrayOfFacts.length;
+      statement = $hasArrayOfFacts[arrayLength - 1];
+      $hasArrayOfFacts.pop();
+      tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
      .to('#transitionCover', {x:0, duration: 0.5})
      .to('#transitionCover h1', {autoAlpha:1, duration:1})
      .to('#transitionCover h2', {autoAlpha:1, duration:1})
-     .to('#transitionCover', {x:-screen.width, duration:0.5, delay:4})
+     .to('#transitionCover h1, h2', {autoAlpha:0, duration:0.5, delay:4})
+     .to('#transitionCover', {x:-screen.width, duration:0.5})
      .to('#section_content', {autoAlpha:1}, '>')
      .to('#sketch_5', {autoAlpha:1, onComplete:changeState}, '<');
+    } else {
+      tl.set('#transitionCover_JH', {x:screen.width, autoAlpha:1})
+     .to('#transitionCover_JH', {x:0, duration: 0.5})
+     .to('#transitionCover_JH h1', {autoAlpha:1, duration:1})
+     .to('#transitionCover_JH h1', {autoAlpha:0, duration:0.5, delay:2})
+     .to('#transitionCover_JH', {x:-screen.width, duration:0.5})
+     .to('#section_content', {autoAlpha:1}, '>')
+     .to('#sketch_5', {autoAlpha:1, onComplete:changeState}, '<');
+    }
   });
 </script>
  
@@ -36,8 +51,15 @@
     <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">Did you know?</h1>
   </div>
   <div class="grid row-start-3 row-end-5">
-    <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">The average person experiences hypnosis at least twice a day.</h2>
+    <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">{statement}</h2>
   </div>
+</div>
+<div id="transitionCover_JH" class="fixed bg-green-4 text-beige-main h-screen w-screen z-100 top-0 left-0 invisible" >
+  <SectionTitle
+    title="JH Online Therapies"
+    fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
+  >
+  </SectionTitle>
 </div>
 <div id="sketch_5" class="invisible">
   <Sketch5/>

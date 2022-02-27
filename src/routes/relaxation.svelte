@@ -1,7 +1,6 @@
 <script>
-  //import { onMount } from "svelte";
-  //import P5 from "p5-svelte";
-  //import gsap from 'gsap';
+  import { onMount } from "svelte";
+  import gsap from 'gsap';
   import Sketch3 from '../sketches/sketch3.svelte';
   import SectionTitle from "../components/Section_Title.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";

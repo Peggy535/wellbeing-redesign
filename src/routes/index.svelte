@@ -10,7 +10,6 @@ import DoubleParagraph from "../components/Double_Paragraph.svelte";
 import BlockStatement from "../components/BlockStatement.svelte";
 import {hasVisited} from '../stores.js';
 
-
 onMount(() => {
   function changeState() {
     classPosition.classList.remove("fixed");
@@ -27,20 +26,20 @@ onMount(() => {
       .to('#introCover h1', {autoAlpha:1, duration:1.5})
       .to('#introCover h1', {duration:1, text: 'Curative Hypnotherapy'}, '>2.1')
       .to('#introCover h1', {duration:1, text:'Relaxation Therapy'}, '>2.1')
-      .to('#introCover h1', {duration: 1, text:'Mindful CBT'}, '>1.3')
-      .to('#section_content', {autoAlpha:1}, '<0.3')
+      .to('#introCover h1', {duration: 1, text:'Mindful CBT'}, '>2.1')
+      .to('#introCover h1', {autoAlpha:0, duration: 1, delay:1.5})
+      .to('#section_content', {autoAlpha:1, duration:0.5})
       .to('#sketch_4', {autoAlpha:1, onComplete:changeState}, '<');
       $hasVisited = true;
   } else {
     tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
      .to('#transitionCover', {x:0, duration: 0.5})
      .to('#transitionCover h1', {autoAlpha:1, duration:1})
-     .to('#transitionCover h1', {autoAlpha:0, duration:1}, '>1')
+     .to('#transitionCover h1', {autoAlpha:0, duration:1, delay:2})
      .to('#transitionCover', {x:-screen.width, duration:0.5})
      .to('#section_content', {autoAlpha:1}, '>')
      .to('#sketch_4B', {autoAlpha:1, onComplete:changeState}, '<');
   }
-
 });
 </script>
 
