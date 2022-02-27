@@ -28,7 +28,6 @@ onMount(() => {
       .to('#introCover h1', {duration:1, text: 'Curative Hypnotherapy'}, '>2.1')
       .to('#introCover h1', {duration:1, text:'Relaxation Therapy'}, '>2.1')
       .to('#introCover h1', {duration: 1, text:'Mindful CBT'}, '>1.3')
-      .to('#introCover h1', {duration: 1, text: 'JH Online Therapies'}, '>1.3')
       .to('#section_content', {autoAlpha:1}, '<0.3')
       .to('#sketch_4', {autoAlpha:1, onComplete:changeState}, '<');
       $hasVisited = true;
