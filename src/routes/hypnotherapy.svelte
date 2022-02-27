@@ -1,7 +1,6 @@
 <script>
-  //import { onMount } from "svelte";
-  import P5 from "p5-svelte";
-  //import gsap from 'gsap';
+  import { onMount } from "svelte";
+  import gsap from 'gsap';
   import Sketch5 from '../sketches/sketch5.svelte';
   import SectionTitle from "../components/Section_Title.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";
@@ -10,11 +9,41 @@
   import DoubleParagraph from "../components/Double_Paragraph.svelte";
   import BookingStatement from "../components/BookingStatement.svelte";
 
+
+  onMount(() => {
+    function changeState() {
+      classPosition.classList.remove("fixed");
+      classPosition.classList.add("absolute");
+    }
+
+    let tl = gsap.timeline();
+    gsap.registerPlugin(TextPlugin, Flip);
+    let classPosition = document.getElementById('section_content');
+    classPosition.classList.add('fixed');
+
+    tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
+     .to('#transitionCover', {x:0, duration: 0.5})
+     .to('#transitionCover h1', {autoAlpha:1, duration:1})
+     .to('#transitionCover h2', {autoAlpha:1, duration:1})
+     .to('#transitionCover', {x:-screen.width, duration:0.5, delay:4})
+     .to('#section_content', {autoAlpha:1}, '>')
+     .to('#sketch_5', {autoAlpha:1, onComplete:changeState}, '<');
+  });
 </script>
  
+<div id="transitionCover" class="fixed grid grid-cols-1 grid-rows-4 top-0 left-0 bg-green-4 text-beige-main h-screen w-screen z-100 invisible font-Eiko-Thin items-center">
+  <div class="grid row-start-1 row-end-2">
+    <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">Did you know?</h1>
+  </div>
+  <div class="grid row-start-3 row-end-5">
+    <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">The average person experiences hypnosis at least twice a day.</h2>
+  </div>
+</div>
+<div id="sketch_5" class="invisible">
+  <Sketch5/>
+</div>
 
-<Sketch5/>
-<section class="absolute z-20 top-0 w-screen m-0 p-0 text-green-4 font-Eiko-Thin">
+<section id="section_content" class="z-20 top-0 w-screen m-0 p-0 text-green-4 font-Eiko-Thin invisible">
   <SectionTitle
     title="Hypnotherapy"
     fontStyle="font-Eiko sm:font-Eiko-Thin">

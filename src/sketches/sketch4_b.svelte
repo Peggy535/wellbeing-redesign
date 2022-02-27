@@ -15,7 +15,7 @@
       })
     };
     async function createSketch() {
-      await sleep(14300);
+      await sleep(3000);
 
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
@@ -44,27 +44,6 @@
       p5.createCanvas(w, h);
       p5.background(184,110,122);
       createSketch();
-      /* p5.noiseDetail(1);
-      p5.angleMode(p5.DEGREES);
-      let density;
-      if(w < 400) {
-        density = 30;
-      } else if(w <700){
-        density = 40;
-      } else if(w < 1050){
-        density = 50;
-      } else if(w < 1300){
-          density = 60;
-      } else{
-        density = 70;
-      }
-      let space = p5.width/density;
-      for(let x = 0; x<p5.width; x+= space){
-        for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
-          points.push(p)
-        }
-      } */
     };
     // Draw function
     

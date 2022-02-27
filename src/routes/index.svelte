@@ -2,6 +2,7 @@
 import { onMount } from "svelte";
 import gsap from 'gsap';
 import Sketch4 from '../sketches/sketch4.svelte';
+import Sketch4B from "../sketches/sketch4_b.svelte";
 import SectionTitle from "../components/Section_Title.svelte";
 import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
 import BlockQuote from "../components/BlockQuote.svelte";
@@ -11,10 +12,15 @@ import {hasVisited} from '../stores.js';
 
 
 onMount(() => {
-
+  function changeState() {
+    classPosition.classList.remove("fixed");
+    classPosition.classList.add("absolute");
+  }
   let tl = gsap.timeline();
-  gsap.registerPlugin(TextPlugin);
-  
+  gsap.registerPlugin(TextPlugin, Flip);
+  //Check to see if sessionStorage 
+  let classPosition = document.getElementById('section_content');
+  classPosition.classList.add('fixed');
   if($hasVisited === false) {
     tl.set('#introCover', {y:-screen.height, autoAlpha:1})
       .to('#introCover', {y:0, duration:2, ease:'expo.inOut'})
@@ -23,31 +29,30 @@ onMount(() => {
       .to('#introCover h1', {duration:1, text:'Relaxation Therapy'}, '>2.1')
       .to('#introCover h1', {duration: 1, text:'Mindful CBT'}, '>1.3')
       .to('#introCover h1', {duration: 1, text: 'JH Online Therapies'}, '>1.3')
-      .to('#section_content', {autoAlpha:1})
-      .to('#sketch_4', {autoAlpha:1}, '<');
-    $hasVisited = true;
+      .to('#section_content', {autoAlpha:1}, '>')
+      .to('#sketch_4', {autoAlpha:1, onComplete:changeState}, '<');
+      $hasVisited = true;
   } else {
     tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
-     .to('#transitionCover', {x:0, duration: 1})
-     .to('#transitionCover h1', {autoAlpha:1, duration:1.5})
+     .to('#transitionCover', {x:0, duration: 0.5})
+     .to('#transitionCover h1', {autoAlpha:1, duration:1})
      .to('#transitionCover h1', {autoAlpha:0, duration:1}, '>1')
-     .to('#transitionCover', {x:-screen.width, duration:1})
-     .to('#section_content', {autoAlpha:1})
-     .to('#sketch_4', {autoAlpha:1}, '<');
+     .to('#transitionCover', {x:-screen.width, duration:0.5})
+     .to('#section_content', {autoAlpha:1}, '>')
+     .to('#sketch_4B', {autoAlpha:1, onComplete:changeState}, '<');
   }
+
 });
-
-
-
 </script>
-<div id="introCover" class="absolute bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
+
+<div id="introCover" class="fixed bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
   <SectionTitle
     title="Your go to specialist in Anxiety & Stress relief"
     fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
   >
   </SectionTitle>
 </div>
-<div id="transitionCover" class="absolute bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible">
+<div id="transitionCover" class="fixed bg-rose-main text-white h-screen w-screen z-100 top-0 left-0 invisible" >
   <SectionTitle
     title="Redefining Online Therapies"
     fontStyle="font-Eiko sm:font-Eiko-Thin invisible"
@@ -57,7 +62,10 @@ onMount(() => {
 <div id="sketch_4" class="invisible">
   <Sketch4/>
 </div>
-<section id="section_content" class="absolute top-0 z-20 w-screen overflow-x-hidden overscroll-none text-white font-Eiko-Thin invisible">
+<div id="sketch_4B" class="invisible">
+  <Sketch4B/>
+</div>
+<section id="section_content" class="top-0 z-20 w-screen overflow-x-hidden overscroll-none text-white font-Eiko-Thin invisible">
   <SectionTitle
     title="JH Online Therapies"
     fontStyle="font-Eiko sm:font-Eiko-Thin"
