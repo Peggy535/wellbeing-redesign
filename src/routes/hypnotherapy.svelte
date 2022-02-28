@@ -52,7 +52,7 @@
   <Sketch5/>
 </div>
 
-<section id="section_content" class="z-20 top-0 w-screen m-0 p-0 text-green-4 font-Eiko-Thin invisible">
+<section id="section_content" class="z-20 top-0 w-screen m-0 p-0 text-green-main font-Eiko-Thin invisible">
   <SectionTitle
     title="Hypnotherapy"
     fontStyle="font-Eiko sm:font-Eiko-Thin">
@@ -64,8 +64,8 @@
   </TherapyStatement>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-neutral-800"
-        textColourWord="text-green-4"
+        textColourParagraph="text-white"
+        textColourWord="text-green-main"
         largeWord="Curative"
         paragraphWords=" hypnotherapy is a more 
         holistic feel to the sessions and work we do together. The word 'hypnotherapy' is derived from 'hypno' - relating to 'hypnosis', and 'therapy' because of the therapeutic suggestions that 
@@ -77,8 +77,8 @@
   >
   </BlockStatement>
   <DoubleParagraph
-    textColourParagraph="text-neutral-800"
-    textColourWord="text-green-4"
+    textColourParagraph="text-white"
+    textColourWord="text-green-main"
     largeWord="You"
     firstParagraph=" are not asleep, but it is something like a state just before you drift off to sleep - you can still hear everything, speak and even move around if you wished to. When you are in that state, your subconscious mind is more accessible 
     and open to suggestion."
@@ -89,8 +89,8 @@
   </DoubleParagraph>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-neutral-800"
-        textColourWord="text-green-4"
+        textColourParagraph="text-white"
+        textColourWord="text-green-main"
         largeWord="Many"
         paragraphWords=" people imagine that the hypnotist has to do all the work without realising that the hypnotist only does all the work while they are talking and during the session. 
         As the client drifts deeper into the experience they begin to discover that each session is a partnership of two minds. The hypnotists works the unconscious mind while the client 

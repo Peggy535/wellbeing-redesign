@@ -5,44 +5,47 @@
     let w = p5.displayWidth;
     let h = p5.displayHeight;
     let points = [];
-    let mult = 0.005;
+    let mult = 0.003;
     
-    p5.setup = () => {
-      p5.createCanvas(w, h);
-      p5.background(202,226,193);
+    function sleep(millisecondsDuration)
+    {
+      return new Promise((resolve) => {
+        setTimeout(resolve, millisecondsDuration);
+      })
+    };
+    async function createSketch() {
+      await sleep(7500);
+
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
       let density;
       if(w < 400) {
-       density = 60;
-     } else if(w <700){
-       density = 70;
-     } else if(w < 1050){
-       density = 80;
-     } else if(w < 1300){
-      density = 90;
-     } else{
-       density = 100;
-     }
-      //console.log(density);
+        density = 30;
+      } else if(w <700){
+        density = 40;
+      } else if(w < 1050){
+        density = 50;
+      } else if(w < 1300){
+        density = 60;
+      } else{
+        density = 70;
+      }
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-10, 10), y + p5.random(-10, 10));
+          let p = p5.createVector(x + p5.random(-15, 15), y + p5.random(-15, 15));
           points.push(p)
         }
       }
     };
-    p5.windowResized = () => {
-      w = p5.windowWidth;
-      h = p5.windowHeight;
-      p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
-      p5.setup();
+    p5.setup = () => {
+      p5.createCanvas(w, h);
+      p5.background(202,226,193);
+      createSketch();
     };
-    // Draw function
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(160,198,145, 70);
+      p5.fill(58,114,38,20);
 
       for(let i =0; i<points.length; i++){
         let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);

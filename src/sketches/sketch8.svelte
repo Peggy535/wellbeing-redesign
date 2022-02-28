@@ -1,6 +1,5 @@
 <script>
   import P5 from 'p5-svelte';
-  //import gsap from 'gsap';
 
   const sketch = (p5) => {
     let w = p5.displayWidth;
@@ -15,7 +14,7 @@
       })
     };
     async function createSketch() {
-      await sleep(5000);
+      await sleep(7500);
 
       p5.noiseDetail(1);
       p5.angleMode(p5.DEGREES);
@@ -41,21 +40,21 @@
     };
     p5.setup = () => {
       p5.createCanvas(w, h);
-      p5.background(184,110,122);
+      p5.background(195,146,116);
       createSketch();
     };
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(244,209,214,25);
-        for(let i =0; i<points.length; i++){
-          let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
-          points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
-          p5.ellipse(points[i].x, points[i].y, 1);
+      p5.fill(255,232,218,20);
+
+      for(let i =0; i<points.length; i++){
+        let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
+        points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
+        p5.ellipse(points[i].x, points[i].y, 1);
       }
     };
-
   };
-  
+
 </script>
 <div class="fixed -z-15 top-0 left-0">
   <P5 {sketch} debug />

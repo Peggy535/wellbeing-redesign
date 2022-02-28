@@ -46,7 +46,7 @@
 <div id="sketch_3" class="invisible">
   <Sketch3/>
 </div>
-<section id="section_content" class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin invisible">
+<section id="section_content" class="z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin invisible">
   <SectionTitle
     title="Relaxation Therapy"
     fontStyle="font-Eiko sm:font-Eiko-Thin">
