@@ -1,8 +1,11 @@
 <script>
+  import { onMount } from "svelte";
+  import gsap from 'gsap';
   import SectionTitleSubheading from "../components/Section_Title_Subheading.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";
   import ParagraphVogue from "../components/Paragraph_Vogue.svelte";
   import BookingStatement from '../components/BookingStatement.svelte';
+  import {hasArrayOfFacts} from '../stores.js';
 </script>
 
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden text-rose-main font-Eiko-Thin">

@@ -5,11 +5,48 @@
   import SectionTitle from "../components/Section_Title.svelte";
   import TherapyStatement from "../components/TherapyStatement.svelte";
   import BookingStatement from '../components/BookingStatement.svelte';
-</script>
- 
+  import {hasArrayOfFacts} from '../stores.js';
 
-<Sketch3/>
-<section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin">
+  // Declare global variable for the transition statement
+  let statement;
+  onMount(() => {
+    let tl = gsap.timeline();
+    gsap.registerPlugin(TextPlugin);
+
+    let classPosition = document.getElementById('section_content');
+    classPosition.classList.add('fixed');
+    function changeState() {
+      classPosition.classList.remove("fixed");
+      classPosition.classList.add("absolute");
+    }
+
+    let arrayLength = $hasArrayOfFacts.length;
+    let randomIndex = Math.floor(Math.random() * arrayLength);
+    statement = $hasArrayOfFacts[randomIndex];
+
+    tl.set('#transitionCover', {x:screen.width, autoAlpha:1})
+    .to('#transitionCover', {x:0, duration: 0.5})
+    .to('#transitionCover h1', {autoAlpha:1, duration:1})
+    .to('#transitionCover h2', {autoAlpha:1, duration:1})
+    .to('#transitionCover h1, #transitionCover h2', {autoAlpha:0, duration:0.5, delay:4})
+    .to('#transitionCover', {x:-screen.width, duration:0.5})
+    .to('#section_content', {autoAlpha:1}, '>')
+    .to('#sketch_3', {autoAlpha:1, onComplete:changeState}, '<');
+  
+  });
+</script>
+<div id="transitionCover" class="fixed grid grid-cols-1 grid-rows-4 top-0 left-0 bg-lime-4 text-rose-1 h-screen w-screen z-100 invisible font-Eiko-Thin items-center">
+  <div class="grid row-start-1 row-end-2">
+    <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">Did you know?</h1>
+  </div>
+  <div class="grid row-start-3 row-end-5">
+    <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10 invisible">{statement}</h2>
+  </div>
+</div>
+<div id="sketch_3" class="invisible">
+  <Sketch3/>
+</div>
+<section id="section_content" class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin invisible">
   <SectionTitle
     title="Relaxation Therapy"
     fontStyle="font-Eiko sm:font-Eiko-Thin">

@@ -10,6 +10,7 @@ import DoubleParagraph from "../components/Double_Paragraph.svelte";
 import BlockStatement from "../components/BlockStatement.svelte";
 import {hasVisited} from '../stores.js';
 
+
 onMount(() => {
   function changeState() {
     classPosition.classList.remove("fixed");
