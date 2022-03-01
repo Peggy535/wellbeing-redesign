@@ -64,7 +64,7 @@
   </TherapyStatement>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-white"
+        textColourParagraph="text-stone-700"
         textColourWord="text-green-main"
         largeWord="Curative"
         paragraphWords=" hypnotherapy is a more 
@@ -77,7 +77,7 @@
   >
   </BlockStatement>
   <DoubleParagraph
-    textColourParagraph="text-white"
+    textColourParagraph="text-stone-700"
     textColourWord="text-green-main"
     largeWord="You"
     firstParagraph=" are not asleep, but it is something like a state just before you drift off to sleep - you can still hear everything, speak and even move around if you wished to. When you are in that state, your subconscious mind is more accessible 
@@ -89,7 +89,7 @@
   </DoubleParagraph>
   <div class="grid h-auto grid-cols-2 sm:grid-cols-4 mb-10">
     <ParagraphVogue
-        textColourParagraph="text-white"
+        textColourParagraph="text-stone-700"
         textColourWord="text-green-main"
         largeWord="Many"
         paragraphWords=" people imagine that the hypnotist has to do all the work without realising that the hypnotist only does all the work while they are talking and during the session. 

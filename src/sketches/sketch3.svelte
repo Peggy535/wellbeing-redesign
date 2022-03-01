@@ -20,15 +20,15 @@
       p5.angleMode(p5.DEGREES);
       let density;
       if(w < 400) {
-        density = 30;
-      } else if(w <700){
-        density = 40;
-      } else if(w < 1050){
-        density = 50;
-      } else if(w < 1300){
         density = 60;
-      } else{
+      } else if(w <700){
         density = 70;
+      } else if(w < 1050){
+        density = 80;
+      } else if(w < 1300){
+        density = 90;
+      } else{
+        density = 100;
       }
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
@@ -45,7 +45,7 @@
     };
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(58,114,38,20);
+      p5.fill(118,166, 99, 22);
 
       for(let i =0; i<points.length; i++){
         let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);

@@ -34,7 +34,7 @@
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-15, 15), y + p5.random(-15, 15));
+          let p = p5.createVector(x + p5.random(-25, 25), y + p5.random(-25, 25));
           points.push(p)
         }
       }
@@ -46,7 +46,7 @@
     };
     p5.draw = () => {
       p5.noStroke();
-      p5.fill(244,209,214,25);
+      p5.fill(244,209,214,15);
         for(let i =0; i<points.length; i++){
           let angle = p5.map(p5.noise(points[i].x*mult, points[i].y*mult),0, 1, 0, 720);
           points[i].add(p5.createVector(p5.cos(angle), p5.sin(angle)));
