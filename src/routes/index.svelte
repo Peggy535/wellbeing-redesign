@@ -37,6 +37,7 @@ onMount(() => {
      .to('#sketch_4B', {autoAlpha:1, onComplete:changeState}, '<');
   }
 });
+
 </script>
 
 <div id="introCover" class="fixed bg-rose-1 text-rose-main h-screen w-screen z-100 top-0 left-0 invisible">
@@ -78,9 +79,9 @@ onMount(() => {
     <div class="grid col-span-1 row-span-1 h-full items-center">
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
     </div>
-    <div class="grid col-span-1 row-start-2 row-end-4 items-center">
+    <div class="grid col-span-1 row-start-2 row-end-4 items-center m-2 p-1 overflow-hidden">
       <img class="object-cover"
-      src="https://res.cloudinary.com/peggy-co/image/upload/c_scale,f_auto,q_auto:best,r_17,w_640/v1645718790/Well%20Being%20v3/JH-Face.jpg"
+      src="https://res.cloudinary.com/peggy-co/image/upload/c_scale,e_sharpen:100,f_auto,r_16,w_669/v1646500627/Well%20Being%20v3/IMG-20220225-WA0000_mlppsz.jpg"
       alt />
     </div>
   </section>
@@ -95,7 +96,7 @@ onMount(() => {
     </div>
   </section>
 
-  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-2xl text-rose-4">
+  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-xl text-rose-4 m-1">
     <blockquote class="grid text-7xl pr-2 sm:text-8xl md:text-9xl md:pr-10 lg:text-10xl xl:text-10xl 2xl:text-13xl text-right">
       You are beautiful, unique and deserving of all good things.
     </blockquote>
@@ -116,8 +117,8 @@ onMount(() => {
     </div>
   </section>
 
-  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-2xl text-rose-4">
-    <h6 class="text-right text-4xl m-1 p-1">
+  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-xl text-rose-4 m-1">
+    <h6 class="text-right text-4xl leading-snug m-1 p-1">
       Having personally experienced such things as anxiety, trauma and chronic fatigue syndrome, and having recovered through the same therapies I offer today, 
       allows me to truly understand other's issue's, and how best to treat them.
     </h6>
