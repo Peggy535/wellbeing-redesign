@@ -1,8 +1,8 @@
 <script>
 import { onMount } from "svelte";
 import gsap from 'gsap';
-import {TextPlugin} from 'gsap/dist/TextPlugin';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+import {TextPlugin} from 'gsap/dist/TextPlugin.js';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
 import Sketch4 from '../sketches/sketch4.svelte';
 import Sketch4B from "../sketches/sketch4_b.svelte";
 import {hasVisited} from '../stores.js';

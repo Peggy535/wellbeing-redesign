@@ -1,8 +1,8 @@
 <script>
   import {onDestroy, onMount} from 'svelte';
   import gsap from 'gsap';
-  import {TextPlugin} from 'gsap/dist/TextPlugin';
-  import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
+  import {TextPlugin} from 'gsap/dist/TextPlugin.js';
+  import {ScrollTrigger} from 'gsap/dist/ScrollTrigger.js';
   import Sketch5 from '../sketches/sketch5.svelte';
   import {hasArrayOfFacts} from '../stores.js';
 
