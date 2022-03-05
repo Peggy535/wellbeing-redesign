@@ -1,8 +1,5 @@
 <script>
   import Sketch7 from "../sketches/sketch7.svelte";
-
-
-
 </script>
 
 <Sketch7/>
