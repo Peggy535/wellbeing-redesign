@@ -11,5 +11,7 @@
 
   var scope = blotter.forText(text);
 
-  scope.appendTo(document.body);
+  scope.appendTo(document.querySelector('#distortion-text'));
+
+
 </script>

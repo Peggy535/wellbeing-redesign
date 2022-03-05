@@ -1,15 +1,18 @@
 <script>
   import Sketch6 from '../sketches/sketch6.svelte';
-  import SectionTitle from "../components/Section_Title.svelte";
-
 </script>
+
 <Sketch6/>
+
 <section class="absolute z-20 top-0 w-screen overflow-x-hidden overscroll-none text-rose-main">
-  <SectionTitle
-    title="About JH"
-    fontStyle="font-Eiko sm:font-Eiko-Thin"
-  >  
-  </SectionTitle>
+  <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
+    <div class="grid row-start-3 row-end-4 items-end">
+        <h1 class="font-Eiko sm:font-Eiko-Thin text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">
+          About JH
+        </h1>
+    </div>
+  </div>
+  
   <div class="grid grid-cols-1 grid-rows-3 items-center">
     <p class=""> Before qualifying as a Curative hypnotherapist & CBT practitioner, and now specialising in Anxiety and Stress Therapy. 
       I was a very successful health & fitness professional. My previous career spanned across a number of decades. Many of my job roles opened up huge opportunities to 
@@ -34,9 +37,3 @@
         <a href="/hireme">HireJH</a>
       </nav>
 </section>
-
-<!-- <p class="">
-  At the root cause of most of my clients' conditions the common thread comes from some form of anxiety and stress usually causing chaos with many sections 
-  of their lives and even causing ill health. So putting all of my skill set together from past and present I am now offering 'Relaxation Therapy' a combination 
-  of relaxation techniques catered for the individual and their own needs and requirements.
-</p> -->

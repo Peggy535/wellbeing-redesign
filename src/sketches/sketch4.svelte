@@ -20,20 +20,20 @@
       p5.angleMode(p5.DEGREES);
       let density;
       if(w < 400) {
-        density = 30;
-      } else if(w <700){
-        density = 40;
-      } else if(w < 1050){
-        density = 50;
-      } else if(w < 1300){
         density = 60;
-      } else{
+      } else if(w < 700){
         density = 70;
+      } else if(w < 1050){
+        density = 80;
+      } else if(w < 1300){
+        density = 90;
+      } else{
+        density = 100;
       }
       let space = p5.width/density;
       for(let x = 0; x<p5.width; x+= space){
         for(let y=0; y < p5.height; y += space){
-          let p = p5.createVector(x + p5.random(-25, 25), y + p5.random(-25, 25));
+          let p = p5.createVector(x + p5.random(-15, 15), y + p5.random(-15, 15));
           points.push(p)
         }
       }

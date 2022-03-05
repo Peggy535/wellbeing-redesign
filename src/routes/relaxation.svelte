@@ -1,10 +1,9 @@
 <script>
-  import { onMount } from "svelte";
+  import {onMount} from 'svelte';
   import gsap from 'gsap';
+  import {TextPlugin} from 'gsap/dist/TextPlugin';
+  import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
   import Sketch3 from '../sketches/sketch3.svelte';
-  import SectionTitle from "../components/Section_Title.svelte";
-  import TherapyStatement from "../components/TherapyStatement.svelte";
-  import BookingStatement from '../components/BookingStatement.svelte';
   import {hasArrayOfFacts} from '../stores.js';
 
   // Declare global variable for the transition statement
@@ -47,24 +46,30 @@
   <Sketch3/>
 </div>
 <section id="section_content" class="z-20 top-0 w-screen overflow-x-hidden overscroll-none text-beige-3 font-Eiko-Thin invisible">
-  <SectionTitle
-    title="Relaxation Therapy"
-    fontStyle="font-Eiko sm:font-Eiko-Thin">
-  </SectionTitle>
+  <div class="grid h-screen w-screen grid-rows-4 grid-cols-1">
+    <div class="grid row-start-3 row-end-4 items-end">
+        <h1 class="font-Eiko sm:font-Eiko-Thin text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-11xl pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">
+          Relaxation Therapy
+        </h1>
+    </div>
+  </div>
+
   <div class="grid w-screen h-fit">
     <p class="text-md pl-3 md:pl-4 lg:pl-6 2xl:pl-10 text-stone-700">Hypnotherapy not for you? I've got you covered.</p>
   </div>
-  <TherapyStatement
-    statement="Discover all about your wonderful Parasympathetic nervous system, learn new skills on how to shift out of the dreaded STRESS RESPONSE of the sympathetic 
-    nervous system and feel more relaxed more of the time."
-    fontSize="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl"
-  >
-  </TherapyStatement>
-  <!-- Page Specific for Relaxation -->
+  <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-5">
+    <div class="grid h-screen col-span-1 row-span-1 lg:col-start-2 lg:col-end-6 items-center m-1 p-1">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl text-right pr-2 md:pr-4 lg:pr-6 2xl:pr-8">
+        Discover all about your wonderful Parasympathetic nervous system, learn new skills on how to shift out of the dreaded STRESS RESPONSE of the sympathetic 
+    nervous system and feel more relaxed more of the time.
+      </h2>
+    </div>
+  </div>
+
   <div class="grid h-screen grid-cols-1 sm:grid-cols-4 grid-rows-3 items-center pl-3 sm:pl-5 md:pl-7 lg:pl-9 2xl:pl-10">
     <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-3 row-span-1">
-      <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl leading-relaxed m-1 p-1 text-neutral-800 font-Eiko lg:font-Eiko-Thin"><span class="font-Eiko-Italic text-5xl text-beige-3">Relaxation</span> therapy has been 
-        specifically designed for Anxiety and Stress relief. It helps reduce muscle tension and stress, lowers blood pressure, and controls pain.
+      <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl leading-relaxed m-1 p-1 text-neutral-800 font-Eiko lg:font-Eiko-Thin"><span class="font-Eiko-Italic text-5xl text-beige-3">
+        Relaxation</span> therapy has been specifically designed for Anxiety and Stress relief. It helps reduce muscle tension and stress, lowers blood pressure, and controls pain.
       </p>
     </div>
     <div class="grid col-span-1 sm:col-start-1 sm:col-end-4 md:col-end-3 2xl:col-end-3 row-span-2">
@@ -86,9 +91,11 @@
       </ul>
     </div>
   </div>
-  <BookingStatement
-    statement="Book a Relaxation Therapy session here."
-  ></BookingStatement>
+  <div class="grid w-screen">
+    <h6 class="font-Eiko-Italic text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl m-1 p-1 md:p-4 lg:p-6 2xl:p-8">
+      Book a Relaxation Therapy session here.
+    </h6>
+  </div>
   <nav>
     <a href="/">Home | </a>
     <a href="/hypnotherapy">Hypnotherapy | </a>
