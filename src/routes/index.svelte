@@ -75,21 +75,24 @@ onMount(() => {
     </div>
   </section>
 <!-- Welcome Section -->
-  <section class="grid h-screen grid-cols-1 grid-rows-3">
-    <div class="grid col-span-1 row-span-1 h-full items-center">
-      <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right font-Eiko-Italic">Welcome.</h1>
+  <section class="grid h-screen grid-cols-1 sm:grid-cols-2 grid-rows-3">
+    <div class="grid col-span-1 row-span-1 sm:col-span-2 items-center">
+      <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right">Welcome.</h1>
     </div>
     <div class="grid col-span-1 row-start-2 row-end-4 items-center m-2 p-1 overflow-hidden">
-      <img class="object-cover"
+      <img class="object-cover h-fit z-20"
       src="https://res.cloudinary.com/peggy-co/image/upload/c_scale,e_sharpen:100,f_auto,r_16,w_669/v1646500627/Well%20Being%20v3/IMG-20220225-WA0000_mlppsz.jpg"
       alt />
     </div>
+    <div class="grid col-start-2 col-end-3 row-start-3 row-end-4">
+      
+    </div>
   </section>
 
-  <section class="grid h-screen">
-    <div class="grid items-center">
-      <p class="text-3xl text-white leading-tight m-1 p-1">
-        <span class="font-Eiko-Italic text-rose-3 text-7xl lg:text-9xl">Hello</span>
+  <section class="grid h-screen grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-1">
+    <div class="grid items-center col-span-1 row-span-1 sm:col-span-2 md:col-span-3">
+      <p class="text-3xl text-white leading-normal m-1 p-1">
+        <span class=" text-rose-3 text-7xl lg:text-9xl">Hello</span>
         and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. 
       Whatever you are facing at this time in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.
       </p>
@@ -100,34 +103,34 @@ onMount(() => {
     <blockquote class="grid text-7xl pr-2 sm:text-8xl md:text-9xl md:pr-10 lg:text-10xl xl:text-10xl 2xl:text-13xl text-right">
       You are beautiful, unique and deserving of all good things.
     </blockquote>
-    <cite class="text-sm m-1 p-1">- Justine Hodgson</cite>
+    <cite class="text-sm m-1 p-1 text-white">- Justine Hodgson</cite>
   </section>
 
-  <section class="grid h-screen grid-cols-1 grid-rows-2 items-center">
-    <div class="grid col-span-1 row-span-1">
-      <p class=" text-2xl leading-tight text-white m-1 p-1"><span class="font-Eiko-Italic text-rose-4 text-8xl lg:text-9xl">By</span> 
+  <section class="grid h-screen grid-cols-1 grid-rows-2 md:grid-cols-4 items-center">
+    <div class="grid col-span-1 row-span-1 md:col-span-3 ">
+      <p class=" text-2xl leading-normal text-white m-1 p-1"><span class=" text-rose-4 text-8xl lg:text-9xl">By</span> 
         now hopefully, you've pressed the play button on my welcome message above. As a hypnotherapist, it's important you get a feel for my voice and personality if we are going to do some work together.
       </p>
     </div>
-    <div class="grid col-span-1 row-span-1">
-      <p class=" text-2xl leading-tight text-white m-1 p-1">
+    <div class="grid col-span-1 row-span-1 md:cols-span-3">
+      <p class=" text-2xl leading-normal text-white m-1 p-1">
         Just as so many before me and many to follow, I've had my own path to travel and it's not always been straight forward but it has led me to where I am today and it continues to get better and convince 
         me that, miracles actually do happen.
       </p>
     </div>
   </section>
 
-  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-xl text-rose-4 m-1">
-    <h6 class="text-right text-4xl leading-snug m-1 p-1">
+  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-xl m-1">
+    <h6 class="text-right text-4xl leading-snug sm:text-5xl m-1 p-1 text-rose-4">
       Having personally experienced such things as anxiety, trauma and chronic fatigue syndrome, and having recovered through the same therapies I offer today, 
       allows me to truly understand other's issue's, and how best to treat them.
     </h6>
   </section>
 
-  <section class="grid h-screen items-center">
-    <div class="grid">
+  <section class="grid h-screen grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-1">
+    <div class="grid items-center col-span-1 row-span-1 sm:col-span-2 md:col-span-3">
       <p class="text-2xl text-white m-1 p-1">
-        <span class="font-Eiko-Italic text-rose-4 text-7xl lg:text-9xl">My</span> 
+        <span class="text-rose-4 text-7xl lg:text-9xl">My</span> 
         desire today and every day hereon, is to make people feel less broken, so they 
         can experience more joy and happiness and less stress in their lives. This in turn can only benefit those around them, and there we have it, a beautiful ripple effect begins and reaches far and 
         wide, as far as the imagination can take you!
