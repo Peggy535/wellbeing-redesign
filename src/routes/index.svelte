@@ -84,9 +84,10 @@ onMount(() => {
       alt />
     </div>
   </section>
-  <section class="grid h-screen grid-cols-1 grid-rows-1">
-    <div class="grid col-span-1 row-span-1 items-center">
-      <p class="text-2xl text-white leading-tight m-1 p-1">
+
+  <section class="grid h-screen">
+    <div class="grid items-center">
+      <p class="text-3xl text-white leading-tight m-1 p-1">
         <span class="font-Eiko-Italic text-rose-3 text-7xl lg:text-9xl">Hello</span>
         and welcome to my website, I hope you find both it and the words helpful, healing and inspiring. 
       Whatever you are facing at this time in your life, no matter what it is, please be assured there is a reason and that there is help for you if you wish to receive it.
@@ -115,7 +116,7 @@ onMount(() => {
     </div>
   </section>
 
-  <section class="grid h-screen w-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-2xl text-rose-4">
+  <section class="grid h-screen items-center bg-gradient-to-b from-rose-1 to-transparent rounded-2xl text-rose-4">
     <h6 class="text-right text-4xl m-1 p-1">
       Having personally experienced such things as anxiety, trauma and chronic fatigue syndrome, and having recovered through the same therapies I offer today, 
       allows me to truly understand other's issue's, and how best to treat them.
