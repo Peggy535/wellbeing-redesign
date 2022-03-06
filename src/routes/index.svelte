@@ -80,7 +80,7 @@ onMount(() => {
       <h1 class="text-7xl pr-2 md:pr-10 lg:pr-5 xl:pr-5 sm:text-9xl md:text-10xl lg:text-13xl xl:text-14xl 2xl:text-15xl text-right">Welcome.</h1>
     </div>
     <div class="grid col-span-1 row-start-2 row-end-4 items-center m-2 p-1 overflow-hidden">
-      <img class="object-cover h-fit z-20"
+      <img class="object-cover z-20"
       src="https://res.cloudinary.com/peggy-co/image/upload/c_scale,e_sharpen:100,f_auto,r_16,w_669/v1646500627/Well%20Being%20v3/IMG-20220225-WA0000_mlppsz.jpg"
       alt />
     </div>

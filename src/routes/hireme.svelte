@@ -1,6 +1,3 @@
-<script>
-  import Sketch7 from "../sketches/sketch7.svelte";
-</script>
 
 <Sketch7/>
 
@@ -36,4 +33,4 @@
       <a href="/aboutjh">About JH |</a>
       <a href="/hireme">HireJH</a>
     </nav>
-</section>
+</section> -->
